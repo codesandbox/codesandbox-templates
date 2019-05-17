@@ -2,14 +2,6 @@
   "name": "codesandbox-templates",
   "version": "0.0.0",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/client/**",
-			"packages/container/**",
-			"packages/template-icons",
-			"packages/template-utilities"
-    ]
-  },
   "installConfig": {
     "pnp": true
   }
