@@ -1,0 +1,47 @@
+import React from "react";
+
+export const ElmIcon = ({
+  width = 32,
+  height = 32,
+  className
+}: {
+  width?: number;
+  height?: number;
+  className?: string;
+}) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clip-path="url(#clip0)">
+      <path d="M16 16.8777L0.877846 32H31.1222L16 16.8777Z" fill="#5FB4CB" />
+      <path
+        d="M25.2916 24.4139L32 31.1224V17.7054L25.2916 24.4139Z"
+        fill="#EEA400"
+      />
+      <path d="M15.1222 16L0 0.877747V31.1224L15.1222 16Z" fill="#596277" />
+      <path d="M32 14.2258V0H17.7741L32 14.2258Z" fill="#5FB4CB" />
+      <path
+        d="M24.4479 8.42928L31.984 15.9654L24.4136 23.5358L16.8775 15.9997L24.4479 8.42928Z"
+        fill="#8CD636"
+      />
+      <path
+        d="M0.877655 0L7.84327 6.96571H22.9844L16.0187 0H0.877655Z"
+        fill="#8CD636"
+      />
+      <path
+        d="M16 15.1223L22.9152 8.20702H9.08467L16 15.1223Z"
+        fill="#EEA400"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <rect width="32" height="32" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);

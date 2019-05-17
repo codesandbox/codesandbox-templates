@@ -1,0 +1,77 @@
+{
+  "name": "@codesandbox/template-icons",
+  "version": "0.0.0",
+  "description": "Collection of SVG icons as React Components for usage with CodeSandbox Templates.",
+	"keywords": ["codesandbox", "react"],
+  "license": "MIT",
+  "author": "Drake Costa <drake@codesandbox.io> (https://github.com/Saeris)",
+	"contributors": [
+    "Ives van Hoorne <ives@codesandbox.io> (https://github.com/CompuIves)",
+		"Sara Vieira <sara@codesandbox.io> (https://github.com/SaraVieira)"
+  ],
+	"homepage": "https://codesandbox.io/",
+  "repository": "https://github.com/codesandbox/codesandbox-templates/tree/master/packages/template-icons",
+	"bugs": "https://github.com/codesandbox/codesandbox-templates/issues",
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/codesandbox",
+    "logo": "https://opencollective.com/codesandbox/logo.txt"
+  },
+	"publishConfig": {
+    "access": "public"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon --watch src --watch example --exec run-s build serve",
+    "build": "pack build",
+    "serve": "babel-node --config-file ./example/.babelrc.js example/index.js",
+    "lint": "eslint ./src",
+    "test": "yarn lint && jest -c ./jest.config.js",
+    "test:watch": "jest -c ./jest.config.js --watch",
+    "test:coverage": "jest -c ./jest.config.js && codecov",
+    "precommit": "lint-staged",
+    "release": "pack publish"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.4.4",
+    "@pika/pack": "^0.3.7",
+    "@pika/plugin-build-node": "^0.3.16",
+    "@pika/plugin-standard-pkg": "^0.3.16",
+    "@types/graphql": "14.2.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "codecov": "^3.3.0",
+    "core-js": "3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "nodemon": "1.19.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.17.0"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__TEST__/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node",
+        {}
+      ]
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  }
+}

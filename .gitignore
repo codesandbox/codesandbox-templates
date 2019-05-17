@@ -1,0 +1,21 @@
+# Package Directories
+node_modules
+
+# Ignored Directories
+.serverless
+.webpack
+.netlify
+.coverage
+/pkg
+/dist
+/build
+/typings
+/.awcache
+/.ssh
+
+# Ignored Files
+.env
+serverless.env.yml
+.DS_STORE
+npm-debug.log*
+yarn-error.log*
