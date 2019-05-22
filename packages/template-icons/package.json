@@ -1,8 +1,11 @@
 {
   "name": "@codesandbox/template-icons",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Collection of SVG icons as React Components for usage with CodeSandbox Templates.",
-  "keywords": ["codesandbox", "react"],
+  "keywords": [
+    "codesandbox",
+    "react"
+  ],
   "license": "MIT",
   "author": "Drake Costa <drake@codesandbox.io> (https://github.com/Saeris)",
   "contributors": [
@@ -76,11 +79,17 @@
       [
         "@pika/plugin-standard-pkg",
         {
-          "exclude": ["__TEST__/*"]
+          "exclude": [
+            "__TEST__/*"
+          ]
         }
       ],
-      ["@pika/plugin-build-types"],
-      ["@pika/plugin-build-web"]
+      [
+        "@pika/plugin-build-types"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
     ]
   },
   "gitHooks": {
