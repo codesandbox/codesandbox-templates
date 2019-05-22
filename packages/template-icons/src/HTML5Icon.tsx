@@ -14,7 +14,7 @@ export const HTML5Icon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0)">
+    <g clipPath="url(#HTML5_Clip0)">
       <path
         d="M30.216 0L27.6454 28.7967L16.0907 32L4.56783 28.8012L2 0H30.216Z"
         fill="#E44D26"
@@ -41,7 +41,7 @@ export const HTML5Icon = ({
       />
     </g>
     <defs>
-      <clipPath id="clip0">
+      <clipPath id="HTML5_Clip0">
         <rect width="32" height="32" fill="white" />
       </clipPath>
     </defs>

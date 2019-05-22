@@ -15,7 +15,7 @@ export const StorybookIcon = ({
     xmlns="http://www.w3.org/2000/svg"
   >
     <mask
-      id="mask0"
+      id="Storybook_Mask0"
       style={{ maskType: "alpha" }}
       maskUnits="userSpaceOnUse"
       x="3"
@@ -28,7 +28,7 @@ export const StorybookIcon = ({
         fill="white"
       />
     </mask>
-    <g mask="url(#mask0)">
+    <g mask="url(#Storybook_Mask0)">
       <path
         d="M3.99245 29.4869L3.00115 3.07343C2.96841 2.20109 3.63729 1.4618 4.50854 1.40735L26.9751 0.00318776C27.8619 -0.0522389 28.6258 0.621744 28.6812 1.50857C28.6833 1.54198 28.6843 1.57545 28.6843 1.60893V30.3911C28.6843 31.2797 27.964 32 27.0754 32C27.0514 32 27.0273 31.9995 27.0033 31.9984L5.528 31.0339C4.69163 30.9963 4.02385 30.3236 3.99245 29.4869Z"
         fill="#FF4785"

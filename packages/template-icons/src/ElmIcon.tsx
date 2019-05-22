@@ -14,7 +14,7 @@ export const ElmIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0)">
+    <g clipPath="url(#Elm_Clip0)">
       <path d="M16 16.8777L0.877846 32H31.1222L16 16.8777Z" fill="#5FB4CB" />
       <path
         d="M25.2916 24.4139L32 31.1224V17.7054L25.2916 24.4139Z"
@@ -36,7 +36,7 @@ export const ElmIcon = ({
       />
     </g>
     <defs>
-      <clipPath id="clip0">
+      <clipPath id="Elm_Clip0">
         <rect width="32" height="32" fill="white" />
       </clipPath>
     </defs>

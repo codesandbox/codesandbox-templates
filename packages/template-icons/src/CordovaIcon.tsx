@@ -30,7 +30,7 @@ export const CordovaIcon = ({
       fillRule="evenodd"
       clipRule="evenodd"
       d="M1.00106 12.7051L1 12.7067L3.97898 31.5855H9.10034L8.68195 27.2005H11.3096L11.6443 31.5855H22.3724L22.7071 27.2005H25.3181L24.8997 31.5855H30.0544L33 12.7067L32.9989 12.7051H1.00107H1.00106Z"
-      fill="url(#paint0_linear)"
+      fill="url(#Cordova_Paint0_Linear)"
       stroke="#D6D6D6"
       strokeWidth="0.1"
       strokeLinejoin="round"
@@ -39,7 +39,7 @@ export const CordovaIcon = ({
       fillRule="evenodd"
       clipRule="evenodd"
       d="M8.321 24.3105L9.8614 18.5391L9.75309 6.8824L6.86423 12.7051L8.321 24.3105Z"
-      fill="url(#paint1_radial)"
+      fill="url(#Cordova_Paint1_Ladial)"
     />
     <path
       fillRule="evenodd"
@@ -63,13 +63,13 @@ export const CordovaIcon = ({
       fillRule="evenodd"
       clipRule="evenodd"
       d="M25.7298 24.3106L24.218 18.5802L24.2748 6.84549L27.1996 12.7048L25.7298 24.3106Z"
-      fill="url(#paint2_linear)"
+      fill="url(#Cordova_Paint2_Linear)"
     />
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M8.33428 24.3106L9.8614 18.5391L9.75309 6.8824L6.8644 12.7048L8.33428 24.3106Z"
-      fill="url(#paint3_linear)"
+      fill="url(#Cordova_Paint3_Linear)"
     />
     <path
       fillRule="evenodd"
@@ -81,7 +81,7 @@ export const CordovaIcon = ({
       fillRule="evenodd"
       clipRule="evenodd"
       d="M32.9989 12.7051L25.6813 1H8.28396L1.00107 12.7051H6.86444L9.73752 6.90509H14.4616L14.1132 9.0016H19.8867L19.5815 6.84156H24.287L27.1996 12.7051H32.9989Z"
-      fill="url(#paint4_linear)"
+      fill="url(#Cordova_Paint4_Linear)"
       stroke="#D6D6D6"
       strokeWidth="0.1"
       strokeLinejoin="round"
@@ -98,14 +98,14 @@ export const CordovaIcon = ({
       fillRule="evenodd"
       clipRule="evenodd"
       d="M20.3953 12.7051L14.688 24.3106L8.321 24.3105L6.86423 12.7051H20.3953Z"
-      fill="url(#paint5_linear)"
+      fill="url(#Cordova_Paint5_Linear)"
     />
     <path
       opacity="0.2"
       fillRule="evenodd"
       clipRule="evenodd"
       d="M9.73752 6.90509H14.4616L14.1132 9.0016H19.8867L20.3953 12.7051H6.86423L9.73752 6.90509Z"
-      fill="url(#paint6_linear)"
+      fill="url(#Cordova_Paint6_Linear)"
     />
     <g opacity="0.8" filter="url(#filter0_f)">
       <path
@@ -300,7 +300,7 @@ export const CordovaIcon = ({
         <feGaussianBlur stdDeviation="1.1101" result="effect1_foregroundBlur" />
       </filter>
       <linearGradient
-        id="paint0_linear"
+        id="Cordova_Paint0_Linear"
         x1="29.785"
         y1="31.0194"
         x2="1.02308"
@@ -311,7 +311,7 @@ export const CordovaIcon = ({
         <stop offset="1" stopColor="#E9E9E9" />
       </linearGradient>
       <radialGradient
-        id="paint1_radial"
+        id="Cordova_Paint1_Ladial"
         cx="0"
         cy="0"
         r="1"
@@ -322,7 +322,7 @@ export const CordovaIcon = ({
         <stop offset="1" stopColor="#25303B" stopOpacity="0" />
       </radialGradient>
       <linearGradient
-        id="paint2_linear"
+        id="Cordova_Paint2_Linear"
         x1="25.7298"
         y1="23.7018"
         x2="24.3138"
@@ -333,7 +333,7 @@ export const CordovaIcon = ({
         <stop offset="1" stopColor="#394958" />
       </linearGradient>
       <linearGradient
-        id="paint3_linear"
+        id="Cordova_Paint3_Linear"
         x1="8.33428"
         y1="23.7018"
         x2="9.75027"
@@ -344,7 +344,7 @@ export const CordovaIcon = ({
         <stop offset="1" stopColor="#394958" />
       </linearGradient>
       <linearGradient
-        id="paint4_linear"
+        id="Cordova_Paint4_Linear"
         x1="28.0683"
         y1="5.16446"
         x2="4.37751"
@@ -355,7 +355,7 @@ export const CordovaIcon = ({
         <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient
-        id="paint5_linear"
+        id="Cordova_Paint5_Linear"
         x1="12.5608"
         y1="12.7051"
         x2="12.5608"
@@ -367,7 +367,7 @@ export const CordovaIcon = ({
         <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint6_linear"
+        id="Cordova_Paint6_Linear"
         x1="13.6297"
         y1="12.7051"
         x2="13.6297"

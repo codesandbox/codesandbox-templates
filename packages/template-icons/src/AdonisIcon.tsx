@@ -14,7 +14,7 @@ export const AdonisIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0)">
+    <g clipPath="url(#AdonisClip0)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -30,7 +30,7 @@ export const AdonisIcon = ({
       />
     </g>
     <defs>
-      <clipPath id="clip0">
+      <clipPath id="AdonisClip0">
         <rect width="32" height="32" fill="white" />
       </clipPath>
     </defs>

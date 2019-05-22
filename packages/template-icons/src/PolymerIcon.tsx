@@ -14,7 +14,7 @@ export const PolymerIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0)">
+    <g clipPath="url(#Polymer_Clip0)">
       <path
         d="M19.2017 27.1718L6.40086 4.99997H12.8017L25.6026 27.1718H19.2017Z"
         fill="#FF4081"
@@ -122,7 +122,7 @@ export const PolymerIcon = ({
       />
     </g>
     <defs>
-      <clipPath id="clip0">
+      <clipPath id="Polymer_Clip0">
         <rect width="32" height="32" fill="white" />
       </clipPath>
     </defs>

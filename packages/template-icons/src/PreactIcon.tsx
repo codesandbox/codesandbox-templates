@@ -14,7 +14,7 @@ export const PreactIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0)">
+    <g clipPath="url(#Preact_Clip0)">
       <path
         d="M16 -4.76837e-07L29.8378 7.98918V23.9676L16 31.9567L2.16216 23.9676V7.98918L16 -4.76837e-07Z"
         fill="#673AB8"
@@ -33,7 +33,7 @@ export const PreactIcon = ({
       />
     </g>
     <defs>
-      <clipPath id="clip0">
+      <clipPath id="Preact_Clip0">
         <rect width="32" height="32" fill="white" />
       </clipPath>
     </defs>

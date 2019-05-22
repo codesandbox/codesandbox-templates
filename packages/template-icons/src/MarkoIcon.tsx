@@ -32,15 +32,15 @@ export const MarkoIcon = ({
     />
     <path
       d="M18.6625 12.2H14.15C13.575 13.1375 13 14.0875 12.425 15.025C11.85 15.9625 11.275 16.9125 10.6875 17.85H15.2C15.775 16.9125 16.3625 15.9625 16.9375 15.025C17.5 14.075 18.075 13.1375 18.6625 12.2Z"
-      fill="url(#paint0_linear)"
+      fill="url(#Marko_Paint0_Linear)"
     />
     <path
       d="M12.5625 14.775H17.075C17.65 13.8375 18.225 12.8875 18.8 11.95C19.375 11.0125 19.95 10.0625 20.525 9.125H16.0125C15.4375 10.0625 14.8625 11.0125 14.2875 11.95C13.7125 12.9 13.1375 13.8375 12.5625 14.775Z"
-      fill="url(#paint1_linear)"
+      fill="url(#Marko_Paint1_Linear)"
     />
     <path
       d="M23.9875 14.775H19.475C18.9 13.8375 18.3125 12.8875 17.7375 11.95C17.1625 11.0125 16.5875 10.0625 16.0125 9.125H20.525C21.1 10.0625 21.675 11.0125 22.25 11.95C22.8375 12.9 23.4125 13.8375 23.9875 14.775Z"
-      fill="url(#paint2_linear)"
+      fill="url(#Marko_Paint2_Linear)"
     />
     <path
       d="M26.65 9.125H22.1375C23.025 10.5875 23.9125 12.0375 24.8 13.4875C25.6875 14.9375 26.5875 16.3875 27.475 17.8375C26.5875 19.2875 25.6875 20.75 24.8 22.2C23.9125 23.65 23.025 25.1 22.125 26.55H26.6375C27.525 25.1 28.4125 23.65 29.3125 22.2C30.2 20.75 31.0875 19.3 31.9875 17.8375C31.1 16.3875 30.2125 14.9375 29.3125 13.4875C28.4375 12.0375 27.5375 10.5875 26.65 9.125Z"
@@ -48,35 +48,35 @@ export const MarkoIcon = ({
     />
     <path
       d="M30.1125 14.775H25.6C25.0125 13.8375 24.4375 12.8875 23.8625 11.95C23.2875 11.0125 22.7125 10.0625 22.1375 9.125H26.65C27.225 10.0625 27.8 11.0125 28.375 11.95C28.95 12.9 29.5375 13.8375 30.1125 14.775Z"
-      fill="url(#paint3_linear)"
+      fill="url(#Marko_Paint3_Linear)"
     />
     <path
       d="M24.025 23.5H28.5375C29.1125 22.5625 29.6875 21.625 30.2625 20.675C30.8375 19.7375 31.4125 18.7875 32 17.85H27.475C26.9 18.7875 26.325 19.7375 25.75 20.675C25.175 21.6125 24.6 22.55 24.025 23.5Z"
-      fill="url(#paint4_linear)"
+      fill="url(#Marko_Paint4_Linear)"
     />
     <path
       d="M17.9 23.5H22.4125C22.9875 22.5625 23.5625 21.6125 24.1375 20.675C24.7125 19.7375 25.2875 18.7875 25.875 17.85H21.3625C20.7875 18.7875 20.2125 19.7375 19.6375 20.675C19.05 21.6125 18.475 22.55 17.9 23.5Z"
-      fill="url(#paint5_linear)"
+      fill="url(#Marko_Paint5_Linear)"
     />
     <path
       d="M7.975 12.2H3.4625C2.8875 13.1375 2.3125 14.0875 1.7375 15.025C1.15 15.9625 0.575 16.9125 0 17.85H4.5125C5.0875 16.9125 5.6625 15.975 6.2375 15.025C6.8125 14.0875 7.3875 13.1375 7.975 12.2Z"
-      fill="url(#paint6_linear)"
+      fill="url(#Marko_Paint6_Linear)"
     />
     <path
       d="M1.875 14.775H6.3875C6.9625 13.8375 7.5375 12.8875 8.1125 11.95C8.7 11.0125 9.275 10.0625 9.85 9.125H5.3375C4.7625 10.0625 4.1875 11 3.6125 11.95C3.0375 12.8875 2.4625 13.8375 1.875 14.775Z"
-      fill="url(#paint7_linear)"
+      fill="url(#Marko_Paint7_Linear)"
     />
     <path
       d="M1.875 20.9125H6.3875C6.9625 21.85 7.5375 22.8 8.1125 23.7375C8.6875 24.675 9.2625 25.625 9.8375 26.5625H5.325C4.75 25.625 4.1625 24.6875 3.5875 23.7375C3.025 22.8 2.45 21.8625 1.875 20.9125Z"
-      fill="url(#paint8_linear)"
+      fill="url(#Marko_Paint8_Linear)"
     />
     <path
       d="M13.3125 14.775H8.79999C8.22499 13.8375 7.64999 12.8875 7.07499 11.95C6.48749 11.0125 5.91249 10.0625 5.33749 9.125H9.84999C10.425 10.0625 11 11 11.575 11.95C12.1625 12.8875 12.7375 13.8375 13.3125 14.775Z"
-      fill="url(#paint9_linear)"
+      fill="url(#Marko_Paint9_Linear)"
     />
     <defs>
       <linearGradient
-        id="paint0_linear"
+        id="Marko_Paint0_Linear"
         x1="14.6679"
         y1="17.8448"
         x2="14.6679"
@@ -87,7 +87,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#8AC23E" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint1_linear"
+        id="Marko_Paint1_Linear"
         x1="16.5424"
         y1="9.1286"
         x2="16.5424"
@@ -98,7 +98,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#698932" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint2_linear"
+        id="Marko_Paint2_Linear"
         x1="20.0047"
         y1="9.1286"
         x2="20.0047"
@@ -109,7 +109,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#FFED01" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint3_linear"
+        id="Marko_Paint3_Linear"
         x1="26.1264"
         y1="9.1286"
         x2="26.1264"
@@ -120,7 +120,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#E02A89" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint4_linear"
+        id="Marko_Paint4_Linear"
         x1="28.0096"
         y1="17.8448"
         x2="28.0096"
@@ -131,7 +131,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#7F1E4F" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint5_linear"
+        id="Marko_Paint5_Linear"
         x1="21.8847"
         y1="17.8448"
         x2="21.8847"
@@ -142,7 +142,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#E95506" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint6_linear"
+        id="Marko_Paint6_Linear"
         x1="3.98564"
         y1="17.8448"
         x2="3.98564"
@@ -153,7 +153,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#88D0F1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint7_linear"
+        id="Marko_Paint7_Linear"
         x1="5.86414"
         y1="9.1286"
         x2="5.86414"
@@ -164,7 +164,7 @@ export const MarkoIcon = ({
         <stop offset="0.8325" stopColor="#00828B" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint8_linear"
+        id="Marko_Paint8_Linear"
         x1="5.86246"
         y1="26.5611"
         x2="5.86246"
@@ -175,7 +175,7 @@ export const MarkoIcon = ({
         <stop offset="1" stopColor="#2073BA" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="paint9_linear"
+        id="Marko_Paint9_Linear"
         x1="9.32641"
         y1="9.1286"
         x2="9.32641"
