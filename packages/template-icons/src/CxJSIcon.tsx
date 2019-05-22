@@ -1,13 +1,13 @@
-import React from "react";
+import React from "react"
 
 export const CxJSIcon = ({
   width = 32,
   height = 32,
   className
 }: {
-  width?: number;
-  height?: number;
-  className?: string;
+  width?: number
+  height?: number
+  className?: string
 }) => (
   <svg
     className={className}
@@ -406,4 +406,4 @@ export const CxJSIcon = ({
       </linearGradient>
     </defs>
   </svg>
-);
+)

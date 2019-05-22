@@ -1,0 +1,10 @@
+{
+  "exclude": ["node_modules", "pkg"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6",
+    "lib": ["es6", "dom", "es2017.object", "es2017.sharedmemory"],
+    "resolveJsonModule": true,
+    "jsx": "react"
+  }
+}
