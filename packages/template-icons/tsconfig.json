@@ -11,8 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "allowJs": true
+    "moduleResolution": "node"
   },
   "include": ["src"]
 }
