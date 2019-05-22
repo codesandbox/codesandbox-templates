@@ -1,17 +1,9 @@
 {
-  "exclude": [
-    "node_modules",
-    "pkg"
-  ],
+  "exclude": ["node_modules", "pkg"],
   "compilerOptions": {
     "module": "esnext",
     "target": "ES6",
-    "lib": [
-      "es6",
-      "dom",
-      "es2017.object",
-      "es2017.sharedmemory"
-    ],
+    "lib": ["es6", "dom", "es2017.object", "es2017.sharedmemory"],
     "resolveJsonModule": true,
     "jsx": "preserve",
     "skipLibCheck": true,
@@ -20,11 +12,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "allowJs": true,
-    "isolatedModules": true,
-    "noEmit": true
+    "allowJs": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
