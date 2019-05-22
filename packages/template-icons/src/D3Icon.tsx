@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const D3Icon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -50,8 +47,8 @@ export const D3Icon = ({
         y2="23.8456"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F9A03C" />
-        <stop offset="1" stop-color="#F7974E" />
+        <stop stopColor="#F9A03C" />
+        <stop offset="1" stopColor="#F7974E" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -61,8 +58,8 @@ export const D3Icon = ({
         y2="24.5271"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F9A03C" />
-        <stop offset="1" stop-color="#F7974E" />
+        <stop stopColor="#F9A03C" />
+        <stop offset="1" stopColor="#F7974E" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -72,8 +69,8 @@ export const D3Icon = ({
         y2="31.7735"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F9A03C" />
-        <stop offset="1" stop-color="#F7974E" />
+        <stop stopColor="#F9A03C" />
+        <stop offset="1" stopColor="#F7974E" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -83,8 +80,8 @@ export const D3Icon = ({
         y2="30.006"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F26D58" />
-        <stop offset="1" stop-color="#F9A03C" />
+        <stop stopColor="#F26D58" />
+        <stop offset="1" stopColor="#F9A03C" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -94,8 +91,8 @@ export const D3Icon = ({
         y2="15.1247"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#B84E51" />
-        <stop offset="1" stop-color="#F68E48" />
+        <stop stopColor="#B84E51" />
+        <stop offset="1" stopColor="#F68E48" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -105,8 +102,8 @@ export const D3Icon = ({
         y2="36.8164"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F9A03C" />
-        <stop offset="1" stop-color="#F7974E" />
+        <stop stopColor="#F9A03C" />
+        <stop offset="1" stopColor="#F7974E" />
       </linearGradient>
     </defs>
   </svg>

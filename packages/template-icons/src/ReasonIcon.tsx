@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const ReasonIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -24,7 +21,7 @@ export const ReasonIcon = ({
     <path
       d="M31.633 0.0733953H0.0733948V31.633H31.633V0.0733953Z"
       stroke="#D74837"
-      stroke-width="0.146789"
+      strokeWidth="0.146789"
     />
     <path
       d="M18.8078 28.9174H15.2223L13.4555 25.5571H11.0999V28.9174H7.93011V16.7753H13.3863C16.608 16.7753 18.444 18.3342 18.444 21.0363C18.444 22.8724 17.6819 24.2234 16.2789 24.9509L18.8078 28.9174ZM11.0999 19.3042V23.0282H13.4036C14.6853 23.0282 15.4302 22.37 15.4302 21.1402C15.4302 19.9451 14.6853 19.3042 13.4036 19.3042H11.0999ZM20.4706 16.7753H30.0492V19.3042H23.6404V21.5733H29.4256V24.0848L23.6404 24.1022V26.3885H30.2224V28.9174H20.4706V16.7753Z"
@@ -44,9 +41,9 @@ export const ReasonIcon = ({
         width="31.7064"
         height="32"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -75,9 +72,9 @@ export const ReasonIcon = ({
         width="22.2923"
         height="12.4357"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"

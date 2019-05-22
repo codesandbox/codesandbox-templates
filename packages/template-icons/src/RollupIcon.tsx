@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const RollupIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -17,7 +14,7 @@ export const RollupIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path
         d="M28.4374 10.5146C28.4374 8.63436 27.945 6.87167 27.0776 5.34401C24.7778 2.97698 19.7751 2.42859 18.5328 5.33282C17.257 8.3098 20.676 11.6225 22.1701 11.3595C24.0727 11.0238 21.8344 6.65903 21.8344 6.65903C24.7442 12.1429 24.0727 10.4642 18.8126 15.5004C13.5525 20.5367 8.18055 31.1631 7.39714 31.6108C7.36356 31.6332 7.32999 31.65 7.29082 31.6667H27.9226C28.2863 31.6667 28.5214 31.2806 28.3591 30.9561L22.9647 20.2793C22.8472 20.0498 22.9311 19.7644 23.155 19.6357C26.311 17.8227 28.4374 14.4204 28.4374 10.5146Z"
         fill="url(#paint0_linear)"
@@ -53,11 +50,11 @@ export const RollupIcon = ({
         y2="18.1474"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF6533" />
-        <stop offset="0.157" stop-color="#FF5633" />
-        <stop offset="0.434" stop-color="#FF4333" />
-        <stop offset="0.714" stop-color="#FF3733" />
-        <stop offset="1" stop-color="#FF3333" />
+        <stop stopColor="#FF6533" />
+        <stop offset="0.157" stopColor="#FF5633" />
+        <stop offset="0.434" stopColor="#FF4333" />
+        <stop offset="0.714" stopColor="#FF3733" />
+        <stop offset="1" stopColor="#FF3333" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -67,8 +64,8 @@ export const RollupIcon = ({
         y2="21.6678"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#BF3338" />
-        <stop offset="1" stop-color="#FF3333" />
+        <stop stopColor="#BF3338" />
+        <stop offset="1" stopColor="#FF3333" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -78,11 +75,11 @@ export const RollupIcon = ({
         y2="17.8243"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF6533" />
-        <stop offset="0.157" stop-color="#FF5633" />
-        <stop offset="0.434" stop-color="#FF4333" />
-        <stop offset="0.714" stop-color="#FF3733" />
-        <stop offset="1" stop-color="#FF3333" />
+        <stop stopColor="#FF6533" />
+        <stop offset="0.157" stopColor="#FF5633" />
+        <stop offset="0.434" stopColor="#FF4333" />
+        <stop offset="0.714" stopColor="#FF3733" />
+        <stop offset="1" stopColor="#FF3333" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -92,11 +89,11 @@ export const RollupIcon = ({
         y2="10.9592"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FF6533" />
-        <stop offset="0.157" stop-color="#FF5633" />
-        <stop offset="0.434" stop-color="#FF4333" />
-        <stop offset="0.714" stop-color="#FF3733" />
-        <stop offset="1" stop-color="#FF3333" />
+        <stop stopColor="#FF6533" />
+        <stop offset="0.157" stopColor="#FF5633" />
+        <stop offset="0.434" stopColor="#FF4333" />
+        <stop offset="0.714" stopColor="#FF3733" />
+        <stop offset="1" stopColor="#FF3333" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -106,8 +103,8 @@ export const RollupIcon = ({
         y2="17.7903"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FBB040" />
-        <stop offset="1" stop-color="#FB8840" />
+        <stop stopColor="#FBB040" />
+        <stop offset="1" stopColor="#FB8840" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -117,8 +114,8 @@ export const RollupIcon = ({
         y2="39.5083"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <clipPath id="clip0">
         <rect width="32" height="32" fill="white" />

@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const MarkoIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -86,8 +83,8 @@ export const MarkoIcon = ({
         y2="12.1949"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8AC23E" />
-        <stop offset="1" stop-color="#8AC23E" stop-opacity="0" />
+        <stop stopColor="#8AC23E" />
+        <stop offset="1" stopColor="#8AC23E" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -97,8 +94,8 @@ export const MarkoIcon = ({
         y2="14.7785"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#698932" />
-        <stop offset="1" stop-color="#698932" stop-opacity="0" />
+        <stop stopColor="#698932" />
+        <stop offset="1" stopColor="#698932" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -108,8 +105,8 @@ export const MarkoIcon = ({
         y2="14.7785"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFED01" />
-        <stop offset="1" stop-color="#FFED01" stop-opacity="0" />
+        <stop stopColor="#FFED01" />
+        <stop offset="1" stopColor="#FFED01" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -119,8 +116,8 @@ export const MarkoIcon = ({
         y2="14.7802"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#E02A89" />
-        <stop offset="1" stop-color="#E02A89" stop-opacity="0" />
+        <stop stopColor="#E02A89" />
+        <stop offset="1" stopColor="#E02A89" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -130,8 +127,8 @@ export const MarkoIcon = ({
         y2="23.4947"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#7F1E4F" />
-        <stop offset="1" stop-color="#7F1E4F" stop-opacity="0" />
+        <stop stopColor="#7F1E4F" />
+        <stop offset="1" stopColor="#7F1E4F" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -141,8 +138,8 @@ export const MarkoIcon = ({
         y2="23.4947"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#E95506" />
-        <stop offset="1" stop-color="#E95506" stop-opacity="0" />
+        <stop stopColor="#E95506" />
+        <stop offset="1" stopColor="#E95506" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -152,8 +149,8 @@ export const MarkoIcon = ({
         y2="12.1985"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#88D0F1" />
-        <stop offset="1" stop-color="#88D0F1" stop-opacity="0" />
+        <stop stopColor="#88D0F1" />
+        <stop offset="1" stopColor="#88D0F1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint7_linear"
@@ -163,8 +160,8 @@ export const MarkoIcon = ({
         y2="14.7749"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#00828B" />
-        <stop offset="0.8325" stop-color="#00828B" stop-opacity="0" />
+        <stop stopColor="#00828B" />
+        <stop offset="0.8325" stopColor="#00828B" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint8_linear"
@@ -174,8 +171,8 @@ export const MarkoIcon = ({
         y2="20.9165"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#2073BA" />
-        <stop offset="1" stop-color="#2073BA" stop-opacity="0" />
+        <stop stopColor="#2073BA" />
+        <stop offset="1" stopColor="#2073BA" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint9_linear"
@@ -185,8 +182,8 @@ export const MarkoIcon = ({
         y2="14.7749"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8ED0E1" />
-        <stop offset="1" stop-color="#88D0F1" stop-opacity="0" />
+        <stop stopColor="#8ED0E1" />
+        <stop offset="1" stopColor="#88D0F1" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>

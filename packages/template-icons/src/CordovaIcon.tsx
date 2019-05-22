@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const CordovaIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -18,95 +15,95 @@ export const CordovaIcon = ({
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M26.9987 27.2005L24.8997 31.5855L23.4543 26.1252L26.9987 27.2005Z"
       fill="#7F8082"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M7.67126 27.2005L9.10034 31.5855L10.5457 26.1252L7.67126 27.2005Z"
       fill="#7F8082"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1.00106 12.7051L1 12.7067L3.97898 31.5855H9.10034L8.68195 27.2005H11.3096L11.6443 31.5855H22.3724L22.7071 27.2005H25.3181L24.8997 31.5855H30.0544L33 12.7067L32.9989 12.7051H1.00107H1.00106Z"
       fill="url(#paint0_linear)"
       stroke="#D6D6D6"
-      stroke-width="0.1"
-      stroke-linejoin="round"
+      strokeWidth="0.1"
+      strokeLinejoin="round"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M8.321 24.3105L9.8614 18.5391L9.75309 6.8824L6.86423 12.7051L8.321 24.3105Z"
       fill="url(#paint1_radial)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M19.3835 5.74055H25.7673L25.6362 19.8505H18.8912L19.3835 5.74055Z"
       fill="#293441"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M14.7658 5.74934L8.54779 5.75318L8.69511 19.8002H15.0258L14.7658 5.74934Z"
       fill="#293441"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M9.19137 18.5391L8.32104 24.3106H25.7297L24.6949 18.5803L9.19137 18.5391Z"
       fill="#2D3948"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M25.7298 24.3106L24.218 18.5802L24.2748 6.84549L27.1996 12.7048L25.7298 24.3106Z"
       fill="url(#paint2_linear)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M8.33428 24.3106L9.8614 18.5391L9.75309 6.8824L6.8644 12.7048L8.33428 24.3106Z"
       fill="url(#paint3_linear)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M14.1132 9.0016L14.688 21.2551H19.1654L19.8867 9.0016H14.1132Z"
       fill="#2D3B48"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M32.9989 12.7051L25.6813 1H8.28396L1.00107 12.7051H6.86444L9.73752 6.90509H14.4616L14.1132 9.0016H19.8867L19.5815 6.84156H24.287L27.1996 12.7051H32.9989Z"
       fill="url(#paint4_linear)"
       stroke="#D6D6D6"
-      stroke-width="0.1"
-      stroke-linejoin="round"
+      strokeWidth="0.1"
+      strokeLinejoin="round"
     />
     <path
       opacity="0.449"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M19.5815 6.84157L24.327 6.8455L27.1996 12.7051L25.7297 24.3106L14.688 24.3106L20.3953 12.7051L19.5815 6.84157Z"
       fill="#363F49"
     />
     <path
       opacity="0.3"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M20.3953 12.7051L14.688 24.3106L8.321 24.3105L6.86423 12.7051H20.3953Z"
       fill="url(#paint5_linear)"
     />
     <path
       opacity="0.2"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M9.73752 6.90509H14.4616L14.1132 9.0016H19.8867L20.3953 12.7051H6.86423L9.73752 6.90509Z"
       fill="url(#paint6_linear)"
     />
@@ -124,8 +121,8 @@ export const CordovaIcon = ({
       <path
         d="M21.748 20.2149C22.0968 20.2149 22.3796 19.0728 22.3796 17.6638C22.3796 16.2549 22.0968 15.1127 21.748 15.1127C21.3991 15.1127 21.1163 16.2549 21.1163 17.6638C21.1163 19.0728 21.3991 20.2149 21.748 20.2149Z"
         stroke="#06EFFE"
-        stroke-width="0.917749"
-        stroke-linecap="round"
+        strokeWidth="0.917749"
+        strokeLinecap="round"
       />
     </g>
     <g opacity="0.9" filter="url(#filter2_f)">
@@ -136,8 +133,8 @@ export const CordovaIcon = ({
       <path
         d="M21.748 20.0301C22.0968 20.0301 22.3796 18.9739 22.3796 17.6709C22.3796 16.368 22.0968 15.3118 21.748 15.3118C21.3991 15.3118 21.1163 16.368 21.1163 17.6709C21.1163 18.9739 21.3991 20.0301 21.748 20.0301Z"
         stroke="#06EFFE"
-        stroke-width="0.954358"
-        stroke-linecap="round"
+        strokeWidth="0.954358"
+        strokeLinecap="round"
       />
     </g>
     <g opacity="0.8" filter="url(#filter3_f)">
@@ -154,8 +151,8 @@ export const CordovaIcon = ({
       <path
         d="M12.5549 20.6216C12.9037 20.6216 13.1865 19.4794 13.1865 18.0705C13.1865 16.6615 12.9037 15.5194 12.5549 15.5194C12.206 15.5194 11.9232 16.6615 11.9232 18.0705C11.9232 19.4794 12.206 20.6216 12.5549 20.6216Z"
         stroke="#06EFFE"
-        stroke-width="0.917749"
-        stroke-linecap="round"
+        strokeWidth="0.917749"
+        strokeLinecap="round"
       />
     </g>
     <g opacity="0.9" filter="url(#filter5_f)">
@@ -166,26 +163,26 @@ export const CordovaIcon = ({
       <path
         d="M12.5549 20.4367C12.9037 20.4367 13.1865 19.3805 13.1865 18.0776C13.1865 16.7747 12.9037 15.7184 12.5549 15.7184C12.206 15.7184 11.9232 16.7747 11.9232 18.0776C11.9232 19.3805 12.206 20.4367 12.5549 20.4367Z"
         stroke="#06EFFE"
-        stroke-width="0.954358"
-        stroke-linecap="round"
+        strokeWidth="0.954358"
+        strokeLinecap="round"
       />
     </g>
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M9.73752 6.9051H14.4616L14.1132 9.0016H19.8867L19.5815 6.84157L24.327 6.8455L27.1996 12.7051L25.7298 24.3106L8.321 24.3105L6.86423 12.7052L9.73752 6.9051Z"
       stroke="#D6D6D6"
-      stroke-width="0.1"
-      stroke-linejoin="round"
+      strokeWidth="0.1"
+      strokeLinejoin="round"
     />
     <g opacity="0.343">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M27.1517 12.7051H6.85004Z"
         fill="white"
       />
-      <path d="M27.1517 12.7051H6.85004" stroke="white" stroke-width="0.1" />
+      <path d="M27.1517 12.7051H6.85004" stroke="white" strokeWidth="0.1" />
     </g>
     <defs>
       <filter
@@ -195,9 +192,9 @@ export const CordovaIcon = ({
         width="10.796"
         height="14.9334"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -216,9 +213,9 @@ export const CordovaIcon = ({
         width="6.66627"
         height="10.5816"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -234,9 +231,9 @@ export const CordovaIcon = ({
         width="6.70467"
         height="10.1578"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -252,9 +249,9 @@ export const CordovaIcon = ({
         width="10.796"
         height="14.9334"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -273,9 +270,9 @@ export const CordovaIcon = ({
         width="6.66627"
         height="10.5816"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -291,9 +288,9 @@ export const CordovaIcon = ({
         width="6.70467"
         height="10.1578"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -310,8 +307,8 @@ export const CordovaIcon = ({
         y2="12.489"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#ACACAC" />
-        <stop offset="1" stop-color="#E9E9E9" />
+        <stop stopColor="#ACACAC" />
+        <stop offset="1" stopColor="#E9E9E9" />
       </linearGradient>
       <radialGradient
         id="paint1_radial"
@@ -321,8 +318,8 @@ export const CordovaIcon = ({
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(8.41501 23.834) rotate(-85.4139) scale(17.0431 8.73272)"
       >
-        <stop stop-color="#25303B" />
-        <stop offset="1" stop-color="#25303B" stop-opacity="0" />
+        <stop stopColor="#25303B" />
+        <stop offset="1" stopColor="#25303B" stopOpacity="0" />
       </radialGradient>
       <linearGradient
         id="paint2_linear"
@@ -332,8 +329,8 @@ export const CordovaIcon = ({
         y2="6.88238"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#24303A" />
-        <stop offset="1" stop-color="#394958" />
+        <stop stopColor="#24303A" />
+        <stop offset="1" stopColor="#394958" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -343,8 +340,8 @@ export const CordovaIcon = ({
         y2="6.88238"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#24303A" />
-        <stop offset="1" stop-color="#394958" />
+        <stop stopColor="#24303A" />
+        <stop offset="1" stopColor="#394958" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -354,8 +351,8 @@ export const CordovaIcon = ({
         y2="7.54103"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#E5E5E5" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="#E5E5E5" />
+        <stop offset="1" stopColor="white" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -365,9 +362,9 @@ export const CordovaIcon = ({
         y2="24.3106"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="0.5" stop-color="white" stop-opacity="0.531707" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="0.5" stopColor="white" stopOpacity="0.531707" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -377,8 +374,8 @@ export const CordovaIcon = ({
         y2="6.90509"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop stopColor="white" />
+        <stop offset="1" stopColor="white" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>

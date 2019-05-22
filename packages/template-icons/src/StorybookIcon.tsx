@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const StorybookIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -19,7 +16,7 @@ export const StorybookIcon = ({
   >
     <mask
       id="mask0"
-      mask-type="alpha"
+      style={{ maskType: "alpha" }}
       maskUnits="userSpaceOnUse"
       x="3"
       y="0"

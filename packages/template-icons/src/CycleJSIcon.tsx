@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const CycleJSIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -34,8 +31,8 @@ export const CycleJSIcon = ({
         y2="0.114831"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.4147" stop-color="#51D3D9" />
-        <stop offset="1" stop-color="#C8FF8C" />
+        <stop offset="0.4147" stopColor="#51D3D9" />
+        <stop offset="1" stopColor="#C8FF8C" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -45,8 +42,8 @@ export const CycleJSIcon = ({
         y2="19.1344"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.4147" stop-color="#51D3D9" />
-        <stop offset="1" stop-color="#5A919B" />
+        <stop offset="0.4147" stopColor="#51D3D9" />
+        <stop offset="1" stopColor="#5A919B" />
       </linearGradient>
     </defs>
   </svg>

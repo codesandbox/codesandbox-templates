@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const WebAssemblyIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -18,8 +15,8 @@ export const WebAssemblyIcon = ({
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M29.1519 28.575H26.9521L26.23 26.0525H22.4193L21.8638 28.575H19.7316L22.4756 17.246H25.8197L29.1519 28.575ZM24.6413 20.0386H23.7501L22.8254 24.1959H25.7041L24.6413 20.0386Z"
       fill="white"
     />

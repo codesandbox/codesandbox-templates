@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const DojoIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -17,7 +14,7 @@ export const DojoIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path
         d="M3.88722 19.2806C3.91241 19.3211 3.93759 19.3605 3.96387 19.3999C4.35327 19.9534 4.80765 20.4581 5.31728 20.9034C6.50419 21.876 7.99188 22.4066 9.52642 22.4046C9.62059 22.4046 9.71805 22.4046 9.8155 22.3969C10.8817 22.3111 11.9269 22.0522 12.9099 21.6304C12.4697 21.7011 12.0252 21.7417 11.5795 21.752C10.8224 21.7528 10.0735 21.5946 9.38138 21.2875C8.68929 20.9804 8.06944 20.5313 7.56201 19.9693C6.3042 19.978 5.0565 19.7442 3.88722 19.2806Z"
         fill="url(#paint0_linear)"
@@ -59,13 +56,13 @@ export const DojoIcon = ({
         d="M17.8746 26.8185C17.1259 26.589 16.4968 26.0754 16.1223 25.3876C15.7477 24.6999 15.6574 23.8928 15.8708 23.1393V23.1514C15.5681 23.4159 15.336 23.7516 15.1954 24.1282C15.0547 24.5047 15.0098 24.9103 15.0649 25.3085C15.2206 25.7907 15.4934 26.2269 15.859 26.5778C16.2245 26.9288 16.6713 27.1837 17.1595 27.3198C17.6476 27.4558 18.1619 27.4687 18.6562 27.3573C19.1506 27.246 19.6096 27.0138 19.9923 26.6816C19.327 26.985 18.5735 27.0337 17.8746 26.8185Z"
         fill="url(#paint6_linear)"
       />
-      <g style="mix-blend-mode:screen">
+      <g style={{ mixBlendMode: "screen" }}>
         <path
           d="M18.9149 26.6017C19.2258 25.6972 20.2289 24.3022 21.3052 24.9406C21.3052 24.9406 22.1812 25.4333 22.3641 24.0471C22.3641 24.0471 23.0211 27.309 19.8598 27.1995C19.8598 27.1995 20.5716 26.6794 20.5639 26.1451C20.5639 26.1396 19.8117 26.6039 18.9149 26.6017Z"
           fill="#2DB5F9"
         />
       </g>
-      <g style="mix-blend-mode:screen">
+      <g style={{ mixBlendMode: "screen" }}>
         <path
           d="M20.1774 24.6067C20.4895 24.4479 20.7851 24.2869 21.36 24.5431C21.8067 24.7413 22.3685 23.9661 21.8823 23.274C21.8823 23.274 21.914 23.9891 21.3348 23.9825C20.7555 23.9759 20.4347 24.2278 20.1774 24.6067Z"
           fill="#5FD2FF"
@@ -161,8 +158,8 @@ export const DojoIcon = ({
         y2="19.7339"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFFA8F" />
-        <stop offset="1" stop-color="#FB784B" />
+        <stop stopColor="#FFFA8F" />
+        <stop offset="1" stopColor="#FB784B" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -172,8 +169,8 @@ export const DojoIcon = ({
         y2="10.4199"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#5BCB99" />
-        <stop offset="1" stop-color="#85A8E8" />
+        <stop stopColor="#5BCB99" />
+        <stop offset="1" stopColor="#85A8E8" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -183,7 +180,7 @@ export const DojoIcon = ({
         y2="5.38076"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#34E28B" />
+        <stop stopColor="#34E28B" />
         <stop offset="1" />
       </linearGradient>
       <linearGradient
@@ -194,8 +191,8 @@ export const DojoIcon = ({
         y2="23.354"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C297FF" />
-        <stop offset="1" stop-color="#AE31BB" />
+        <stop stopColor="#C297FF" />
+        <stop offset="1" stopColor="#AE31BB" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -206,7 +203,7 @@ export const DojoIcon = ({
         gradientUnits="userSpaceOnUse"
       >
         <stop />
-        <stop offset="1" stop-color="#D23DE2" />
+        <stop offset="1" stopColor="#D23DE2" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -217,7 +214,7 @@ export const DojoIcon = ({
         gradientUnits="userSpaceOnUse"
       >
         <stop />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -227,7 +224,7 @@ export const DojoIcon = ({
         y2="27.158"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#2DB5F9" />
+        <stop stopColor="#2DB5F9" />
         <stop offset="1" />
       </linearGradient>
       <linearGradient
@@ -239,12 +236,12 @@ export const DojoIcon = ({
         gradientUnits="userSpaceOnUse"
       >
         <stop />
-        <stop offset="0.21" stop-color="#48080A" />
-        <stop offset="0.42" stop-color="#891014" />
-        <stop offset="0.61" stop-color="#BC151B" />
-        <stop offset="0.78" stop-color="#E01A21" />
-        <stop offset="0.91" stop-color="#F71C24" />
-        <stop offset="1" stop-color="#FF1D25" />
+        <stop offset="0.21" stopColor="#48080A" />
+        <stop offset="0.42" stopColor="#891014" />
+        <stop offset="0.61" stopColor="#BC151B" />
+        <stop offset="0.78" stopColor="#E01A21" />
+        <stop offset="0.91" stopColor="#F71C24" />
+        <stop offset="1" stopColor="#FF1D25" />
       </linearGradient>
       <clipPath id="clip0">
         <rect width="32" height="32" fill="white" />

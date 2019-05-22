@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const NuxtIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -18,14 +15,14 @@ export const NuxtIcon = ({
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M9.84071 27.2566L9.76991 27.115C9.62832 26.8319 9.62832 26.5487 9.69911 26.1947H2.0531L13.3805 6.08849L18.1239 14.6549L19.6814 13.5221L14.9381 4.95575C14.8673 4.81416 14.3009 3.9646 13.3805 3.9646C12.9558 3.9646 12.3186 4.10619 11.823 5.02655L0.353981 25.3451C0.283185 25.5575 -0.21239 26.4779 0.212388 27.2566C0.495574 27.6814 0.920353 28.1062 1.9115 28.1062H11.5398C10.5487 28.1062 10.0531 27.6814 9.84071 27.2566Z"
       fill="#00C58E"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M31.646 25.4159L22.4425 8.84956C22.3009 8.70796 21.8053 7.78761 20.885 7.78761C20.4602 7.78761 19.823 8 19.3274 8.84956L18.1239 10.8319V14.6549L20.885 9.9115L30.0177 26.1947H26.5487C26.6067 26.5317 26.5572 26.8785 26.4071 27.1858L26.3363 27.2566C25.9115 28.0354 24.8496 28.1062 24.708 28.1062H30.0885C30.3009 28.1062 31.292 28.0354 31.7876 27.2566C32 26.9027 32.1416 26.2655 31.646 25.4159Z"
       fill="#108775"
     />

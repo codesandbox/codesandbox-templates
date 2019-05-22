@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const AureliaIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -90,8 +87,8 @@ export const AureliaIcon = ({
         y2="22.1375"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C06FBB" />
-        <stop offset="1" stop-color="#6E4D9B" />
+        <stop stopColor="#C06FBB" />
+        <stop offset="1" stopColor="#6E4D9B" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -101,11 +98,11 @@ export const AureliaIcon = ({
         y2="4.40661"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#6E4D9B" />
-        <stop offset="0.14" stop-color="#77327A" />
-        <stop offset="0.29" stop-color="#B31777" />
-        <stop offset="0.84" stop-color="#CD0F7E" />
-        <stop offset="1" stop-color="#ED2C89" />
+        <stop stopColor="#6E4D9B" />
+        <stop offset="0.14" stopColor="#77327A" />
+        <stop offset="0.29" stopColor="#B31777" />
+        <stop offset="0.84" stopColor="#CD0F7E" />
+        <stop offset="1" stopColor="#ED2C89" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -115,8 +112,8 @@ export const AureliaIcon = ({
         y2="31.4743"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C06FBB" />
-        <stop offset="1" stop-color="#6E4D9B" />
+        <stop stopColor="#C06FBB" />
+        <stop offset="1" stopColor="#6E4D9B" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -126,8 +123,8 @@ export const AureliaIcon = ({
         y2="29.2176"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C06FBB" />
-        <stop offset="1" stop-color="#6E4D9B" />
+        <stop stopColor="#C06FBB" />
+        <stop offset="1" stopColor="#6E4D9B" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -137,8 +134,8 @@ export const AureliaIcon = ({
         y2="29.3871"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C06FBB" />
-        <stop offset="1" stop-color="#6E4D9B" />
+        <stop stopColor="#C06FBB" />
+        <stop offset="1" stopColor="#6E4D9B" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -148,11 +145,11 @@ export const AureliaIcon = ({
         y2="4.84826"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#6E4D9B" />
-        <stop offset="0.14" stop-color="#77327A" />
-        <stop offset="0.29" stop-color="#B31777" />
-        <stop offset="0.84" stop-color="#CD0F7E" />
-        <stop offset="1" stop-color="#ED2C89" />
+        <stop stopColor="#6E4D9B" />
+        <stop offset="0.14" stopColor="#77327A" />
+        <stop offset="0.29" stopColor="#B31777" />
+        <stop offset="0.84" stopColor="#CD0F7E" />
+        <stop offset="1" stopColor="#ED2C89" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -162,8 +159,8 @@ export const AureliaIcon = ({
         y2="26.8809"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#C06FBB" />
-        <stop offset="1" stop-color="#6E4D9B" />
+        <stop stopColor="#C06FBB" />
+        <stop offset="1" stopColor="#6E4D9B" />
       </linearGradient>
       <linearGradient
         id="paint7_linear"
@@ -173,11 +170,11 @@ export const AureliaIcon = ({
         y2="1.65607"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#6E4D9B" />
-        <stop offset="0.14" stop-color="#77327A" />
-        <stop offset="0.53" stop-color="#B31777" />
-        <stop offset="0.79" stop-color="#CD0F7E" />
-        <stop offset="1" stop-color="#ED2C89" />
+        <stop stopColor="#6E4D9B" />
+        <stop offset="0.14" stopColor="#77327A" />
+        <stop offset="0.53" stopColor="#B31777" />
+        <stop offset="0.79" stopColor="#CD0F7E" />
+        <stop offset="1" stopColor="#ED2C89" />
       </linearGradient>
     </defs>
   </svg>

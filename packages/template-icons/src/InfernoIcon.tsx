@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const InfernoIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -17,7 +14,7 @@ export const InfernoIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path
         d="M10.5137 7.3418L10.0969 7.61842C6.66098 9.86567 4.85073 13.0633 4.80923 17.1578C4.75598 22.3939 8.4456 26.9487 13.5492 28.1204C20.1374 29.633 26.6574 24.8572 27.1874 18.1307C27.6065 12.8103 24.0091 8.03055 18.9332 6.37842C18.1679 5.52505 17.4729 2.65692 18.6825 1.35055C23.6709 2.45905 27.4107 5.00617 29.822 9.10855C35.0942 18.0784 30.3546 29.7708 20.34 32.5635C11.0372 35.1578 1.6246 29.0253 0.233352 19.4638C-1.31052 10.5485 4.98435 2.61742 13.8657 1.28455C11.7939 3.15842 10.6852 5.7318 10.5137 7.3418Z"
         fill="#494949"

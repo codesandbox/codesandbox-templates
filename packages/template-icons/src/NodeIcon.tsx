@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const NodeIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -17,7 +14,7 @@ export const NodeIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path
         d="M16.7587 0.20289C16.2903 -0.0676604 15.7127 -0.0676604 15.2443 0.20289L2.70125 7.44109C2.2322 7.71164 1.94345 8.21154 1.94345 8.75319V23.2408C1.94345 23.7819 2.2322 24.2819 2.70075 24.5529L15.2437 31.7969C15.7127 32.0676 16.2902 32.0676 16.7592 31.7969L29.2993 24.5529C29.7677 24.2818 30.0565 23.7819 30.0565 23.2408V8.75274C30.0565 8.21159 29.7677 7.71164 29.2988 7.44114L16.7587 0.20289Z"
         fill="url(#paint0_linear)"
@@ -44,11 +41,11 @@ export const NodeIcon = ({
         y2="28.71"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#41873F" />
-        <stop offset="0.3288" stop-color="#418B3D" />
-        <stop offset="0.6352" stop-color="#419637" />
-        <stop offset="0.9319" stop-color="#3FA92D" />
-        <stop offset="1" stop-color="#3FAE2A" />
+        <stop stopColor="#41873F" />
+        <stop offset="0.3288" stopColor="#418B3D" />
+        <stop offset="0.6352" stopColor="#419637" />
+        <stop offset="0.9319" stopColor="#3FA92D" />
+        <stop offset="1" stopColor="#3FAE2A" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -58,10 +55,10 @@ export const NodeIcon = ({
         y2="-5.80125"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.1376" stop-color="#41873F" />
-        <stop offset="0.4032" stop-color="#54A044" />
-        <stop offset="0.7136" stop-color="#66B848" />
-        <stop offset="0.9081" stop-color="#6CC04A" />
+        <stop offset="0.1376" stopColor="#41873F" />
+        <stop offset="0.4032" stopColor="#54A044" />
+        <stop offset="0.7136" stopColor="#66B848" />
+        <stop offset="0.9081" stopColor="#6CC04A" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -71,10 +68,10 @@ export const NodeIcon = ({
         y2="15.9939"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.0919" stop-color="#6CC04A" />
-        <stop offset="0.2864" stop-color="#66B848" />
-        <stop offset="0.5968" stop-color="#54A044" />
-        <stop offset="0.8624" stop-color="#41873F" />
+        <stop offset="0.0919" stopColor="#6CC04A" />
+        <stop offset="0.2864" stopColor="#66B848" />
+        <stop offset="0.5968" stopColor="#54A044" />
+        <stop offset="0.8624" stopColor="#41873F" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -84,10 +81,10 @@ export const NodeIcon = ({
         y2="24.273"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.0919" stop-color="#6CC04A" />
-        <stop offset="0.2864" stop-color="#66B848" />
-        <stop offset="0.5968" stop-color="#54A044" />
-        <stop offset="0.8624" stop-color="#41873F" />
+        <stop offset="0.0919" stopColor="#6CC04A" />
+        <stop offset="0.2864" stopColor="#66B848" />
+        <stop offset="0.5968" stopColor="#54A044" />
+        <stop offset="0.8624" stopColor="#41873F" />
       </linearGradient>
       <clipPath id="clip0">
         <rect width="32" height="32" fill="white" />

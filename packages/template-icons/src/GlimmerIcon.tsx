@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const GlimmerIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -17,7 +14,7 @@ export const GlimmerIcon = ({
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0)">
+    <g clipPath="url(#clip0)">
       <path
         d="M32.0003 16.0001C32.0003 24.8366 24.8368 32.0001 16.0003 32.0001C7.16368 32.0001 0.000301361 24.8366 0.000301361 16.0001C0.000301361 7.16359 7.16368 9.15527e-05 16.0003 9.15527e-05C24.8368 9.15527e-05 32.0003 7.16359 32.0003 16.0001Z"
         fill="#F8835A"

@@ -1,6 +1,6 @@
-const { join } = require(`path`)
+const { join } = require(`path`);
 
-const srcDir = join(__dirname, `src`)
+const srcDir = join(__dirname, `src`);
 
 module.exports = {
   root: true,
@@ -280,7 +280,7 @@ module.exports = {
     "quote-props": [2, "consistent-as-needed", { keywords: true }],
     quotes: [2, `backtick`, `avoid-escape`],
     "require-jsdoc": 0,
-    semi: [2, `never`],
+    semi: [2, `always`],
     "semi-spacing": [2, { before: false, after: true }],
     "semi-style": [2, `last`],
     "sprt-keys": 0,
@@ -384,4 +384,4 @@ module.exports = {
       }
     ]
   }
-}
+};

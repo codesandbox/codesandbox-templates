@@ -1,14 +1,11 @@
 import React from "react";
+import { SVGIconProps } from "./types";
 
 export const RazzleIcon = ({
   width = 32,
   height = 32,
   className
-}: {
-  width?: number;
-  height?: number;
-  className?: string;
-}) => (
+}: SVGIconProps) => (
   <svg
     className={className}
     width={width}
@@ -19,7 +16,7 @@ export const RazzleIcon = ({
   >
     <mask
       id="mask0"
-      mask-type="alpha"
+      style={{ maskType: "alpha" }}
       maskUnits="userSpaceOnUse"
       x="3"
       y="0"
@@ -37,152 +34,152 @@ export const RazzleIcon = ({
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-76.6389 -59.8866L205.295 102.887L201 110.327L-80.9342 -52.4471L-76.6389 -59.8866Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-80.9338 -52.4473L201 110.327L196.704 117.767L-85.2291 -45.0076L-80.9338 -52.4473Z"
         fill="url(#paint0_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-85.2295 -45.0076L196.704 117.766L192.409 125.207L-89.5257 -37.568L-85.2295 -45.0076ZM-93.8201 -30.1294L188.114 132.645L183.818 140.085L-98.1154 -22.6898L-93.8201 -30.1294Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-98.115 -22.6896L183.819 140.085L179.523 147.525L-102.41 -15.2499L-98.115 -22.6896Z"
         fill="url(#paint1_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-96.9303 -44.9655L185.003 117.809L180.708 125.249L-101.226 -37.5258L-96.9303 -44.9655Z"
         fill="url(#paint2_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-102.41 -15.2503L179.523 147.525L175.229 154.964L-106.705 -7.81076L-102.41 -15.2503Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M6.32892 -106.95L288.263 55.8245L283.967 63.264L2.0336 -99.5109L6.32892 -106.95Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M2.03413 -99.5103L283.968 63.2641L279.672 70.7038L-2.26119 -92.0706L2.03413 -99.5103Z"
         fill="url(#paint3_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-2.2608 -92.0713L279.672 70.7035L275.378 78.1431L-6.55611 -84.6318L-2.2608 -92.0713Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-10.8514 -77.1922L271.082 85.5826L266.787 93.0222L-15.1467 -69.7518L-10.8514 -77.1922Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-15.1469 -69.7522L266.787 93.0222L262.492 100.461L-19.4418 -62.3133L-15.1469 -69.7522ZM-6.55631 -84.6316L275.377 78.1428L271.082 85.5825L-10.8516 -77.1919L-6.55631 -84.6316Z"
         fill="url(#paint4_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-19.4421 -62.3131L262.493 100.462L258.197 107.9L-23.7374 -54.8736L-19.4421 -62.3131Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-6.35955 -50.4768L299.556 60.8676L296.618 68.9408L-9.29806 -42.4046L-6.35955 -50.4768Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-9.2978 -42.4038L296.618 68.9404L293.68 77.013L-12.236 -34.3313L-9.2978 -42.4038Z"
         fill="url(#paint5_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-12.2357 -34.3315L293.679 77.0121L290.741 85.0852L-15.1742 -26.2601L-12.2357 -34.3315Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-18.1118 -18.187L287.804 93.1575L284.865 101.231L-21.0503 -10.1157L-18.1118 -18.187Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-21.0503 -10.1146L284.866 101.23L281.928 109.301L-23.9882 -2.04288L-21.0503 -10.1146ZM-15.174 -26.2597L290.742 85.0846L287.804 93.1571L-18.1121 -18.1871L-15.174 -26.2597Z"
         fill="url(#paint6_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-23.9879 -2.04251L281.928 109.302L278.989 117.374L-26.9264 6.02972L-23.9879 -2.04251Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-54.2251 86.325L11.6601 -27.7906L16.9392 -24.7424L-48.9461 89.3732L-54.2251 86.325Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-48.9456 89.373L16.9392 -24.7428L22.2181 -21.695L-43.6667 92.4208L-48.9456 89.373Z"
         fill="url(#paint7_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-43.667 92.4206L22.2174 -21.6951L27.4964 -18.6469L-38.3879 95.4688L-43.667 92.4206Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-36.1131 103.303L35.4873 -20.7104L41.2418 -17.3888L-30.3586 106.626L-36.1131 103.303Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-27.5245 101.718L38.4092 -12.4823L43.7079 -9.42311L-22.2263 104.778L-27.5245 101.718Z"
         fill="url(#paint8_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-41.6954 100.508L29.9046 -23.5073L35.6593 -20.1848L-35.9407 103.83L-41.6954 100.508Z"
         fill="url(#paint9_linear)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M-22.2251 104.777L43.7067 -9.42081L49.0059 -6.36161L-16.9278 107.838L-22.2251 104.777Z"
         fill="black"
       />
@@ -196,9 +193,9 @@ export const RazzleIcon = ({
         y2="116.076"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint1_linear"
@@ -208,9 +205,9 @@ export const RazzleIcon = ({
         y2="145.834"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint2_linear"
@@ -220,9 +217,9 @@ export const RazzleIcon = ({
         y2="-40.8443"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint3_linear"
@@ -232,9 +229,9 @@ export const RazzleIcon = ({
         y2="69.013"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint4_linear"
@@ -244,9 +241,9 @@ export const RazzleIcon = ({
         y2="91.2939"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint5_linear"
@@ -256,9 +253,9 @@ export const RazzleIcon = ({
         y2="74.3572"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint6_linear"
@@ -268,9 +265,9 @@ export const RazzleIcon = ({
         y2="98.5331"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint7_linear"
@@ -280,9 +277,9 @@ export const RazzleIcon = ({
         y2="-24.6621"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint8_linear"
@@ -292,9 +289,9 @@ export const RazzleIcon = ({
         y2="-12.397"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
       <linearGradient
         id="paint9_linear"
@@ -304,9 +301,9 @@ export const RazzleIcon = ({
         y2="-23.4144"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#3023AE" />
-        <stop offset="0.70741" stop-color="#53A0FD" />
-        <stop offset="1" stop-color="#B4EC51" />
+        <stop stopColor="#3023AE" />
+        <stop offset="0.70741" stopColor="#53A0FD" />
+        <stop offset="1" stopColor="#B4EC51" />
       </linearGradient>
     </defs>
   </svg>
