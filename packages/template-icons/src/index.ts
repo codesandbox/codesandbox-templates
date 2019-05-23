@@ -32,6 +32,7 @@ export { NuxtIcon } from "./NuxtIcon";
 export { PolymerIcon } from "./PolymerIcon";
 export { PreactIcon } from "./PreactIcon";
 export { PrismaIcon } from "./PrismaIcon";
+export { QuasarIcon } from "./QuasarIcon";
 export { RazzleIcon } from "./RazzleIcon";
 export { ReactIcon } from "./ReactIcon";
 export { ReasonIcon } from "./ReasonIcon";
