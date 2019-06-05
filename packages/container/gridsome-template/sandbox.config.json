@@ -2,5 +2,8 @@
   "infiniteLoopProtection": true,
   "hardReloadOnChange": false,
   "view": "browser",
-  "template": "gridsome"
+  "template": "gridsome",
+  "container": {
+    "port": 8080
+  }
 }
