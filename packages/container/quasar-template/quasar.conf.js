@@ -60,14 +60,14 @@ module.exports = function(ctx) {
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
           exclude: /node_modules/
-        });
+        })
       }
     },
 
     devServer: {
       // https: true,
       // port: 8080,
-      open: true // opens browser window automatically
+      // open: true // opens browser window automatically
     },
 
     // animations: 'all', // --- includes all animations
@@ -147,5 +147,5 @@ module.exports = function(ctx) {
         // appId: 'quasar-app'
       }
     }
-  };
-};
+  }
+}
