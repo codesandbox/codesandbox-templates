@@ -3,15 +3,12 @@
   "version": "4.1.0",
   "adonis-version": "4.1.0",
   "description": "The fullstack application boilerplate for Adonisjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "node ace test"
   },
-  "keywords": [
-    "adonisjs",
-    "adonis-app"
-  ],
+  "keywords": ["adonisjs", "adonis-app"],
   "author": "",
   "license": "UNLICENSED",
   "private": true,
