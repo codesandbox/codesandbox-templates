@@ -1,7 +1,7 @@
 export default {
   // The blog's title as it appears in the layout header, and in the document
   // <title> tag.
-  title: "create-react-blog",
+  title: "create-react-navi-blog",
 
   author: "James K Nelson",
   description:
