@@ -45,6 +45,7 @@ export { StorybookIcon } from "./StorybookIcon";
 export { StyleguidistIcon } from "./StyleguidistIcon";
 export { SvelteIcon } from "./SvelteIcon";
 export { TypeScriptIcon } from "./TypeScriptIcon";
+export { UnibitIcon } from "./UnibitIcon";
 export { VueIcon } from "./VueIcon";
 export { VuePressIcon } from "./VuePressIcon";
 export { WebAssemblyIcon } from "./WebAssemblyIcon";
