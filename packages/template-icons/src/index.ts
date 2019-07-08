@@ -40,6 +40,7 @@ export { ReasonIcon } from "./ReasonIcon";
 export { RollupIcon } from "./RollupIcon";
 export { SapperIcon } from "./SapperIcon";
 export { ServerlessIcon } from "./ServerlessIcon";
+export { StackbitIcon } from "./StackbitIcon";
 export { StorybookIcon } from "./StorybookIcon";
 export { StyleguidistIcon } from "./StyleguidistIcon";
 export { SvelteIcon } from "./SvelteIcon";
