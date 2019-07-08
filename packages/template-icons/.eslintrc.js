@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb", "prettier", "prettier/react", "prettier/flowtype"],
+  extends: ["airbnb", "plugin:prettier/recommended", "prettier/react"],
   plugins: ["react-hooks"],
   parser: "babel-eslint",
   env: {
@@ -9,7 +9,6 @@ module.exports = {
     es6: true
   },
   rules: {
-    "linebreak-style": 0,
     "react/jsx-filename-extension": 0,
     "react/sort-comp": 0,
     "import/no-extraneous-dependencies": 0,
@@ -37,6 +36,50 @@ module.exports = {
     "no-param-reassign": ["error", { props: false }],
     camelcase: "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
-  }
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "warn",
+      { aspects: ["noHref", "invalidHref"] }
+    ],
+    "jsx-a11y/label-has-for": "off"
+  },
+  overrides: [
+    {
+      files: ["**/*.ts", "**/*.tsx"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: "module",
+        ecmaFeatures: { jsx: true },
+        warnOnUnsupportedTypeScriptVersion: true
+      },
+      plugins: ["@typescript-eslint"],
+      rules: {
+        "default-case": "off",
+        "no-dupe-class-members": "off",
+        "@typescript-eslint/no-angle-bracket-type-assertion": "warn",
+        "no-array-constructor": "off",
+        "@typescript-eslint/no-array-constructor": "warn",
+        "@typescript-eslint/no-namespace": "error",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+          "warn",
+          {
+            functions: false,
+            classes: false,
+            variables: false,
+            typedefs: false
+          }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          { args: "none", ignoreRestSiblings: true }
+        ],
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-useless-constructor": "warn"
+      }
+    }
+  ]
 };
