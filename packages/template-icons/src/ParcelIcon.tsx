@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const ParcelIcon = ({
+export const ParcelIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M17.5656 27.9156L26.3486 22.3624C26.3808 22.342 26.4233 22.3517 26.4436 22.3838C26.464 22.416 26.4543 22.4585 26.4221 22.4789L17.6103 28.0503C17.5992 28.0574 17.5864 28.061 17.5735 28.061L17.5656 27.9156Z"

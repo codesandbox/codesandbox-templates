@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const MDXDeckIcon = ({
+export const MDXDeckIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M30.7826 9.56522H1.21739C0.641093 9.56522 0.173912 10.0324 0.173912 10.6087V21.3913C0.173912 21.9676 0.641093 22.4348 1.21739 22.4348H30.7826C31.3589 22.4348 31.8261 21.9676 31.8261 21.3913V10.6087C31.8261 10.0324 31.3589 9.56522 30.7826 9.56522Z"

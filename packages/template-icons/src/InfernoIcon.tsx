@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const InfernoIcon = ({
+export const InfernoIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M10.5137 7.06576L10.0969 7.33199C6.66097 9.49476 4.85072 12.5722 4.80922 16.5128C4.75597 21.552 8.4456 25.9356 13.5492 27.0633C20.1374 28.519 26.6574 23.9227 27.1874 17.4491C27.6065 12.3287 24.0091 7.72862 18.9332 6.1386C18.1679 5.31731 17.4729 2.55701 18.6825 1.29974C23.6709 2.36657 27.4107 4.81794 29.822 8.7661C35.0943 17.3988 30.3546 28.6516 20.34 31.3394C11.0372 33.8361 1.62459 27.9341 0.233337 18.7321C-1.31054 10.152 4.98434 2.51899 13.8657 1.23622C11.7939 3.03965 10.6852 5.51629 10.5137 7.06576Z"

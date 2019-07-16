@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const DocusaurusIcon = ({
+export const DocusaurusIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path d="M29.5385 7.70647H15.7539V13.286H29.5385V7.70647Z" fill="white" />
     <path

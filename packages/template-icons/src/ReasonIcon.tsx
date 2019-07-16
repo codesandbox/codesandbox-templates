@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const ReasonIcon = ({
+export const ReasonIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <g filter="url(#Reason_Filter0_i)">
       <path d="M31.7064 0H0V31.7064H31.7064V0Z" fill="black" />

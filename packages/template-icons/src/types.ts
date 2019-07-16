@@ -1,8 +1,7 @@
 import React from "react";
 
-export interface SVGIconProps
-  extends React.FunctionComponent<React.HTMLAttributes<SVGElement>> {
+export interface SVGIconProps extends React.HTMLAttributes<SVGElement> {
+  scale?: number;
   width?: number;
   height?: number;
-  className?: string;
 }

@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const StackbitIcon = ({
+export const StackbitIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M30.9887 17.668C31.086 18.7488 30.5311 19.8587 29.5185 20.4137L17.5134 27.1027C16.6371 27.5895 15.5953 27.5895 14.719 27.1027L2.48997 20.4137C1.47738 19.8587 0.94187 18.778 1.01003 17.668V13.0529C0.922397 11.9917 1.40922 10.9012 2.4705 10.3072L14.6995 3.38459C15.5953 2.86856 16.6858 2.86856 17.5621 3.40407L29.5573 10.3267C30.5504 10.9012 31.086 11.9917 30.9886 13.0529V17.668H30.9887Z"

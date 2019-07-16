@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const D3Icon = ({
+export const D3Icon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M31.9503 22.9594C31.9647 22.8201 31.975 22.6793 31.983 22.538C31.9927 22.3706 21.9094 12.8035 21.9094 12.8035H21.6683C21.6683 12.8035 31.8886 23.584 31.9503 22.9594Z"

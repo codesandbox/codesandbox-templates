@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const MarionetteIcon = ({
+export const MarionetteIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M18.3668 14.4869L21.368 7.38807C21.4035 7.30278 21.503 7.26244 21.5891 7.29816C21.6747 7.33369 21.7157 7.43178 21.6797 7.51725L19.0347 13.7724L18.3668 14.4869Z"

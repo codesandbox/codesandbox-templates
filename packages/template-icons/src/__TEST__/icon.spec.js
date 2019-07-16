@@ -14,6 +14,12 @@ Object.entries(Icons).forEach(([name, Icon]) => {
         const { container } = render(<Icon className="custom" />);
         expect(container.firstChild.classList.contains(`custom`)).toBeTruthy();
       });
+
+      it(`scales the width and height when the scale prop is set to a numeric value`, () => {
+        const { container } = render(<Icon scale={2} />);
+        expect(container.firstChild.getAttribute(`width`)).toEqual(`64`);
+        expect(container.firstChild.getAttribute(`height`)).toEqual(`64`);
+      });
     });
   });
 });

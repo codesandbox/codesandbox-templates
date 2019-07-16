@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const DoczIcon = ({
+export const DoczIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M10.8331 5.90909H30.1488C30.1326 4.36669 28.9595 3.26447 27.5141 3.26447H8.19835C9.6438 3.26447 10.8169 4.36669 10.8331 5.90909Z"

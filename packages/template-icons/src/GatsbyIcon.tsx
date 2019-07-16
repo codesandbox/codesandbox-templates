@@ -1,18 +1,19 @@
 import React from "react";
 import { SVGIconProps } from "./types";
 
-export const GatsbyIcon = ({
+export const GatsbyIcon: React.FC<SVGIconProps> = ({
+  scale = 1,
   width = 32,
   height = 32,
-  className
-}: SVGIconProps) => (
+  ...props
+}) => (
   <svg
-    className={className}
-    width={width}
-    height={height}
+    width={scale * width}
+    height={scale * height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       d="M28.5714 16H20.5714V18.2857H26.0571C25.2571 21.7143 22.7429 24.5714 19.4286 25.7143L6.28571 12.5714C7.65714 8.57143 11.5429 5.71429 16 5.71429C19.4286 5.71429 22.5143 7.42857 24.4571 10.0571L26.1714 8.57143C23.8857 5.48572 20.2286 3.42857 16 3.42857C10.0571 3.42857 5.02857 7.65715 3.77143 13.2571L18.8571 28.3429C24.3429 26.9714 28.5714 21.9429 28.5714 16Z"
