@@ -2,6 +2,10 @@
   "name": "codesandbox-templates",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codesandbox/codesandbox-templates"
+  },
   "installConfig": {
     "pnp": true
   }
