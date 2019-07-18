@@ -25,6 +25,7 @@ export { MarionetteIcon } from "./MarionetteIcon";
 export { MarkoIcon } from "./MarkoIcon";
 export { MDXDeckIcon } from "./MDXDeckIcon";
 export { MeteorIcon } from "./MeteorIcon";
+export { NaviIcon } from "./NaviIcon";
 export { NestIcon } from "./NestIcon";
 export { NextIcon } from "./NextIcon";
 export { NodeIcon } from "./NodeIcon";
