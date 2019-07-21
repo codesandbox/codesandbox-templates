@@ -13,7 +13,11 @@
     "Sara Vieira <sara@codesandbox.io> (https://github.com/SaraVieira)"
   ],
   "homepage": "https://codesandbox.io/",
-  "repository": "https://github.com/codesandbox/codesandbox-templates/tree/master/packages/template-icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codesandbox/codesandbox-templates",
+    "directory": "packages/template-icons"
+  },
   "bugs": "https://github.com/codesandbox/codesandbox-templates/issues",
   "collective": {
     "type": "opencollective",
