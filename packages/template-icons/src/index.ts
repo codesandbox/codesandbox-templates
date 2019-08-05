@@ -19,6 +19,7 @@ export { GlimmerIcon } from "./GlimmerIcon";
 export { GridsomeIcon } from "./GridsomeIcon";
 export { HapiIcon } from "./HapiIcon";
 export { HTML5Icon } from "./HTML5Icon";
+export { HyperappIcon } from "./HyperappIcon";
 export { InfernoIcon } from "./InfernoIcon";
 export { JavaScriptIcon } from "./JavaScriptIcon";
 export { MarionetteIcon } from "./MarionetteIcon";
