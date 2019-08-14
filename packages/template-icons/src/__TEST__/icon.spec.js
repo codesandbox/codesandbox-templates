@@ -26,6 +26,34 @@ Object.entries(Icons).forEach(([name, Icon]) => {
         expect(container.firstChild.getAttribute(`width`)).toEqual(`64`);
         expect(container.firstChild.getAttribute(`height`)).toEqual(`64`);
       });
+
+      it(`all icon <defs> have different ids`, () => {
+        const { container } = render(<Icon />);
+        const ids = Array.from(container.querySelectorAll("[id]")).map(
+          element => element.id
+        );
+        expect(ids.length).toEqual(new Set(ids).size);
+      });
+
+      it(`each icon instance generates unique ids`, () => {
+        // render the icon once
+        const { container: frstContainer } = render(<Icon />);
+        const frstIds = Array.from(frstContainer.querySelectorAll("[id]")).map(
+          element => element.id
+        );
+
+        // render the icon for the 2nd time
+        const { container: scndContainer } = render(<Icon />);
+        const scndIds = Array.from(scndContainer.querySelectorAll("[id]")).map(
+          element => element.id
+        );
+
+        // put all ids into a single array
+        const ids = [...frstIds, ...scndIds];
+
+        // make sure there are not duplicates
+        expect(ids.length).toEqual(new Set(ids).size);
+      });
     });
   });
 });
