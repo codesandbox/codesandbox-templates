@@ -1,6 +1,6 @@
 import React from "react";
 import { SVGIconProps } from "./types";
-import useUniqueId from "./useUniqueId";
+import { useUniqueId } from "./useUniqueId";
 
 export const RazzleIcon: React.FC<SVGIconProps> = ({
   scale = 1,

@@ -1,6 +1,6 @@
 import React from "react";
 import { SVGIconProps } from "./types";
-import useUniqueId from "./useUniqueId";
+import { useUniqueId } from "./useUniqueId";
 
 export const CxJSIcon: React.FC<SVGIconProps> = ({
   scale = 1,
