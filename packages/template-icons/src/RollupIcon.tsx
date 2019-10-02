@@ -120,6 +120,7 @@ export const RollupIcon: React.FC<SVGIconProps> = ({ ...props }) => {
 };
 
 export const RollupIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+  const id = useUniqueId();
   return (
     <Shell {...props}>
       <path
@@ -143,11 +144,11 @@ export const RollupIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
       <path
         opacity="0.3"
         d="M10.5424 17.8469C16.6652 6.58986 17.467 5.4555 20.6559 5.4555C22.0363 5.4555 23.4258 5.97029 24.4827 6.89964C23.3893 5.65139 21.7675 4.95438 20.1548 4.95438C16.9658 4.95438 16.1641 6.08873 10.0413 17.3458C4.93892 26.7304 5.88194 27.8283 6.48784 28.5071C6.5744 28.6028 6.67462 28.6848 6.7794 28.7531C6.24639 27.9786 6.0095 26.1792 10.5424 17.8469Z"
-        fill="url(#paint0_linear)"
+        fill={`url(#paint0_linear-${id})`}
       />
       <defs>
         <linearGradient
-          id="paint0_linear"
+          id={`paint0_linear-${id}`}
           x1="16.2066"
           y1="6.3556"
           x2="11.8643"
@@ -163,6 +164,7 @@ export const RollupIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
 };
 
 export const RollupIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+  const id = useUniqueId();
   return (
     <Shell {...props}>
       <path
@@ -186,11 +188,11 @@ export const RollupIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
       <path
         opacity="0.3"
         d="M10.5424 17.8469C16.6652 6.58986 17.467 5.4555 20.6559 5.4555C22.0363 5.4555 23.4258 5.97029 24.4827 6.89964C23.3893 5.65139 21.7675 4.95438 20.1548 4.95438C16.9658 4.95438 16.1641 6.08873 10.0413 17.3458C4.93892 26.7304 5.88194 27.8283 6.48784 28.5071C6.5744 28.6028 6.67462 28.6848 6.7794 28.7531C6.24639 27.9786 6.0095 26.1792 10.5424 17.8469Z"
-        fill="url(#paint0_linear)"
+        fill={`url(#paint0_linear-${id})`}
       />
       <defs>
         <linearGradient
-          id="paint0_linear"
+          id={`paint0_linear-${id}`}
           x1="16.2066"
           y1="6.3556"
           x2="11.8643"

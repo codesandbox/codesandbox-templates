@@ -125,9 +125,10 @@ export const PolymerIcon: React.FC<SVGIconProps> = ({ ...props }) => {
 };
 
 export const PolymerIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+  const id = useUniqueId();
   return (
     <Shell {...props}>
-      <g clipPath="url(#clip0)">
+      <g clipPath={`url(#clip_${id})`}>
         <path
           d="M19.0009 27.1719L6.20001 5H12.6009L25.4017 27.1719H19.0009Z"
           fill="black"
@@ -143,7 +144,7 @@ export const PolymerIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         />
       </g>
       <defs>
-        <clipPath id="clip0">
+        <clipPath id={`clip_${id}`}>
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
