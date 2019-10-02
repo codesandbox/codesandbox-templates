@@ -18,3 +18,39 @@ export const AngularIcon: React.FC<SVGIconProps> = ({ ...props }) => (
     />
   </Shell>
 );
+
+export const AngularIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.9168 2.8288V0L23.8336 4.2496L22.016 20.0064L11.9168 25.6V15.7952H15.0656L16.5632 19.5328H19.3408L11.9168 2.8288ZM11.9168 13.4912V8.256L14.0928 13.4912H11.9168Z"
+      fill="black"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.9168 2.8288V0L0 4.2496L1.8176 20.0064L11.9168 25.6V15.7952H8.74239L7.24479 19.5328H4.46719L11.9168 2.8288ZM11.9168 8.25601V8.256L9.74079 13.4912H11.9168V8.25601Z"
+      fill="black"
+      fillOpacity="0.6"
+    />
+  </Shell>
+);
+
+export const AngularIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.9168 2.8288V0L23.8336 4.2496L22.016 20.0064L11.9168 25.6V15.7952H15.0656L16.5632 19.5328H19.3408L11.9168 2.8288ZM11.9168 13.4912V8.256L14.0928 13.4912H11.9168Z"
+      fill="white"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M11.9168 2.8288V0L0 4.2496L1.8176 20.0064L11.9168 25.6V15.7952H8.74239L7.24479 19.5328H4.46719L11.9168 2.8288ZM11.9168 8.25601V8.256L9.74079 13.4912H11.9168V8.25601Z"
+      fill="white"
+      fillOpacity="0.6"
+    />
+  </Shell>
+);
