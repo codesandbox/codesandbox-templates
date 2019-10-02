@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const ElmIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const ElmIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <g clipPath={`url(#Elm_Clip0_${id})`}>
         <path d="M16 16.8777L0.877846 32H31.1222L16 16.8777Z" fill="#5FB4CB" />
         <path
@@ -45,6 +34,6 @@ export const ElmIcon: React.FC<SVGIconProps> = ({
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </Shell>
   );
 };

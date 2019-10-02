@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const QuasarIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const QuasarIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <g clipPath={`url(#Quasar_Clip0_${id})`}>
         <path
           d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16345 24.8366 0 16 0C7.16345 0 0 7.16345 0 16C0 24.8366 7.16345 32 16 32Z"
@@ -58,6 +47,6 @@ export const QuasarIcon: React.FC<SVGIconProps> = ({
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </Shell>
   );
 };

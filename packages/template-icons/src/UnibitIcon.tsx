@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const UnibitIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const UnibitIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -56,6 +45,6 @@ export const UnibitIcon: React.FC<SVGIconProps> = ({
           <stop offset="1" stopColor="#0495F3" />
         </linearGradient>
       </defs>
-    </svg>
+    </Shell>
   );
 };

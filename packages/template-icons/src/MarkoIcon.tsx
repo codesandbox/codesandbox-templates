@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const MarkoIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const MarkoIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <path
         d="M16.0125 9.125H20.525C18.8625 11.85 17.025 14.85 15.1875 17.8375H10.675C12.5125 14.85 14.35 11.85 16.0125 9.125Z"
         fill="#8DC220"
@@ -191,6 +180,6 @@ export const MarkoIcon: React.FC<SVGIconProps> = ({
           <stop offset="1" stopColor="#88D0F1" stopOpacity="0" />
         </linearGradient>
       </defs>
-    </svg>
+    </Shell>
   );
 };

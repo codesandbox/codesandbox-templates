@@ -1,20 +1,9 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 
-export const NuxtIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => (
-  <svg
-    width={scale * width}
-    height={scale * height}
-    viewBox="0 0 32 32"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+export const NuxtIcon: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -31,5 +20,5 @@ export const NuxtIcon: React.FC<SVGIconProps> = ({
       d="M26.6195 27.2566V27.1858L26.6903 27.0442C26.7611 26.7611 26.8319 26.4779 26.7611 26.1947L26.4779 25.3451L19.2566 12.7434L18.1947 10.8319H18.1239L17.0619 12.7434L9.8407 25.3451L9.55752 26.1947C9.48896 26.5547 9.53863 26.9272 9.69911 27.2566C9.9823 27.6814 10.4071 28.1062 11.3982 28.1062H24.8496C25.0619 28.1062 26.1239 28.0354 26.6195 27.2566ZM18.1239 14.6549L24.708 26.1947H11.5398L18.1239 14.6549Z"
       fill="white"
     />
-  </svg>
+  </Shell>
 );

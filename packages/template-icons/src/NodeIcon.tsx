@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const NodeIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const NodeIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <g clipPath={`url(#Node_Clip0_${id})`}>
         <path
           d="M16.7587 0.20289C16.2903 -0.0676604 15.7127 -0.0676604 15.2443 0.20289L2.70125 7.44109C2.2322 7.71164 1.94345 8.21154 1.94345 8.75319V23.2408C1.94345 23.7819 2.2322 24.2819 2.70075 24.5529L15.2437 31.7969C15.7127 32.0676 16.2902 32.0676 16.7592 31.7969L29.2993 24.5529C29.7677 24.2818 30.0565 23.7819 30.0565 23.2408V8.75274C30.0565 8.21159 29.7677 7.71164 29.2988 7.44114L16.7587 0.20289Z"
@@ -95,6 +84,6 @@ export const NodeIcon: React.FC<SVGIconProps> = ({
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </Shell>
   );
 };

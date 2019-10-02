@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const ReasonIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const ReasonIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <g filter={`url(#Reason_Filter0_i_${id})`}>
         <path d="M31.7064 0H0V31.7064H31.7064V0Z" fill="black" />
       </g>
@@ -102,6 +91,6 @@ export const ReasonIcon: React.FC<SVGIconProps> = ({
           <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
         </filter>
       </defs>
-    </svg>
+    </Shell>
   );
 };

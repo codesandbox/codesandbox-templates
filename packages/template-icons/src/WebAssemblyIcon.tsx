@@ -1,20 +1,9 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 
-export const WebAssemblyIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => (
-  <svg
-    width={scale * width}
-    height={scale * height}
-    viewBox="0 0 32 32"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+export const WebAssemblyIcon: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -29,5 +18,5 @@ export const WebAssemblyIcon: React.FC<SVGIconProps> = ({
       d="M19.6613 0H32V31.9996H0V0H12.3387C12.3363 0.0573061 12.3303 0.113909 12.3303 0.171918C12.3303 2.19873 13.9732 3.84197 16 3.84197C18.0268 3.84197 19.67 2.19873 19.67 0.171918C19.67 0.113909 19.6641 0.0573061 19.6613 0ZM26.9521 28.575H29.1519L25.8197 17.246H22.4756L19.7316 28.575H21.8639L22.4193 26.0525H26.23L26.9521 28.575ZM15.2772 28.575H17.3824L20.0835 17.246H18.005L16.3505 25.0526H16.3234L14.7523 17.246H12.7684L11.0203 24.9573H10.9933L9.54269 17.246H7.42378L9.86508 28.575H12.0107L13.6916 20.8636H13.7187L15.2772 28.575ZM23.7501 20.0386H24.6413L25.7041 24.1959H22.8254L23.7501 20.0386Z"
       fill="#654FF0"
     />
-  </svg>
+  </Shell>
 );

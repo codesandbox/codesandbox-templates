@@ -1,20 +1,9 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 
-export const MarionetteIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => (
-  <svg
-    width={scale * width}
-    height={scale * height}
-    viewBox="0 0 32 32"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+export const MarionetteIcon: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
     <path
       d="M18.3668 14.4869L21.368 7.38807C21.4035 7.30278 21.503 7.26244 21.5891 7.29816C21.6747 7.33369 21.7157 7.43178 21.6797 7.51725L19.0347 13.7724L18.3668 14.4869Z"
       fill="#939598"
@@ -75,5 +64,5 @@ export const MarionetteIcon: React.FC<SVGIconProps> = ({
       d="M7.02635 28.8412C6.94408 28.8412 6.87211 28.7813 6.85932 28.6983C6.85523 28.6706 6.43499 25.8531 6.43499 21.4367C6.43499 17.0202 6.85523 14.162 6.85932 14.1336C6.87318 14.0421 6.95882 13.979 7.05122 13.9927C7.14362 14.006 7.20759 14.0913 7.19391 14.1825C7.18947 14.2109 6.77314 17.0469 6.77314 21.4371C6.77314 25.8291 7.18982 28.6221 7.19373 28.6489C7.20795 28.7395 7.14398 28.8257 7.05158 28.8394C7.04305 28.8401 7.03452 28.8412 7.02635 28.8412Z"
       fill="#939598"
     />
-  </svg>
+  </Shell>
 );

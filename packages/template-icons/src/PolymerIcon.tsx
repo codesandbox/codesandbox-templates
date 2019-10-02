@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const PolymerIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const PolymerIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <g clipPath={`url(#Polymer_Clip0_${id})`}>
         <path
           d="M19.2017 27.1718L6.40086 4.99997H12.8017L25.6026 27.1718H19.2017Z"
@@ -131,6 +120,6 @@ export const PolymerIcon: React.FC<SVGIconProps> = ({
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </Shell>
   );
 };

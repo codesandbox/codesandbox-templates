@@ -1,20 +1,9 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 
-export const MeteorIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => (
-  <svg
-    width={scale * width}
-    height={scale * height}
-    viewBox="0 0 32 32"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+export const MeteorIcon: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
     <path
       d="M0 0L27.4047 29.0282C27.4047 29.0282 28.3384 29.6867 29.0523 28.9185C29.7663 28.1503 29.2171 27.382 29.2171 27.382L0 0Z"
       fill="#DF4F4F"
@@ -43,5 +32,5 @@ export const MeteorIcon: React.FC<SVGIconProps> = ({
       d="M8.2379 22.6629L14.8461 29.8086C14.8461 29.8086 15.1688 30.0241 15.4155 29.7726C15.6623 29.5211 15.4725 29.2696 15.4725 29.2696L8.2379 22.6629Z"
       fill="#DF4F4F"
     />
-  </svg>
+  </Shell>
 );

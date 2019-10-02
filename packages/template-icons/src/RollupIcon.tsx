@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const RollupIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const RollupIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <g clipPath={`url(#Rollup_Clip0_${id})`}>
         <path
           d="M28.4374 10.5146C28.4374 8.63436 27.945 6.87167 27.0776 5.34401C24.7778 2.97698 19.7751 2.42859 18.5328 5.33282C17.257 8.3098 20.676 11.6225 22.1701 11.3595C24.0727 11.0238 21.8344 6.65903 21.8344 6.65903C24.7442 12.1429 24.0727 10.4642 18.8126 15.5004C13.5525 20.5367 8.18055 31.1631 7.39714 31.6108C7.36356 31.6332 7.32999 31.65 7.29082 31.6667H27.9226C28.2863 31.6667 28.5214 31.2806 28.3591 30.9561L22.9647 20.2793C22.8472 20.0498 22.9311 19.7644 23.155 19.6357C26.311 17.8227 28.4374 14.4204 28.4374 10.5146Z"
@@ -126,6 +115,6 @@ export const RollupIcon: React.FC<SVGIconProps> = ({
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </Shell>
   );
 };

@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const GlimmerIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const GlimmerIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <g clipPath={`url(#Glimmer_Clip0_${id})`}>
         <path
           d="M32.0003 16.0001C32.0003 24.8366 24.8368 32.0001 16.0003 32.0001C7.16368 32.0001 0.000301361 24.8366 0.000301361 16.0001C0.000301361 7.16359 7.16368 9.15527e-05 16.0003 9.15527e-05C24.8368 9.15527e-05 32.0003 7.16359 32.0003 16.0001Z"
@@ -34,6 +23,6 @@ export const GlimmerIcon: React.FC<SVGIconProps> = ({
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </Shell>
   );
 };

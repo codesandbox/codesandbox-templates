@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const RazzleIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const RazzleIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <mask
         id={`Razzle_Mask0_${id}`}
         style={{ maskType: "alpha" }}
@@ -311,6 +300,6 @@ export const RazzleIcon: React.FC<SVGIconProps> = ({
           <stop offset="1" stopColor="#B4EC51" />
         </linearGradient>
       </defs>
-    </svg>
+    </Shell>
   );
 };

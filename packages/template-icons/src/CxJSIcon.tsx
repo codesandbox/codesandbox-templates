@@ -1,24 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "./types";
+import { Shell } from "./Shell";
 import { useUniqueId } from "./useUniqueId";
 
-export const CxJSIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const CxJSIcon: React.FC<SVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <Shell {...props}>
       <path
         d="M9.81333 10.8444H3.59111L6.72 16.2489L9.81333 10.8444Z"
         fill={`url(#CxJS_Paint0_lLnear_${id})`}
@@ -407,6 +396,6 @@ export const CxJSIcon: React.FC<SVGIconProps> = ({
           <stop offset="0.989" stopColor="#D970AC" />
         </linearGradient>
       </defs>
-    </svg>
+    </Shell>
   );
 };
