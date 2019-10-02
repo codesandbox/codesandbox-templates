@@ -18,3 +18,31 @@ export const VueIcon: React.FC<SVGIconProps> = ({ ...props }) => (
     />
   </Shell>
 );
+
+export const VueIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
+    <path
+      d="M2 4.91406L16 29.0641L30 4.91406H24.4L16 19.4041L7.53 4.91406H2Z"
+      fill="black"
+    />
+    <path
+      d="M7.53 3.91406L16 18.4741L24.4 3.91406H19.22L16 9.5141L12.71 3.91406H7.53Z"
+      fill="black"
+      fillOpacity="0.6"
+    />
+  </Shell>
+);
+
+export const VueIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
+    <path
+      d="M2 4.91406L16 29.0641L30 4.91406H24.4L16 19.4041L7.53 4.91406H2Z"
+      fill="black"
+    />
+    <path
+      d="M7.53 3.91406L16 18.4741L24.4 3.91406H19.22L16 9.5141L12.71 3.91406H7.53Z"
+      fill="white"
+      fillOpacity="0.6"
+    />
+  </Shell>
+);
