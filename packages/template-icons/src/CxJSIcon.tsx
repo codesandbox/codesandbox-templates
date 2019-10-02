@@ -399,3 +399,49 @@ export const CxJSIcon: React.FC<SVGIconProps> = ({ ...props }) => {
     </Shell>
   );
 };
+
+export const CxJSIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
+    <g clipPath="url(#clip0)">
+      <path
+        d="M5.81984 0H11.6066L14.5165 5.02623H8.69669L5.81984 10.0524L8.69669 15.0787H14.5165L11.6066 20.1049H5.81984L0 10.0524L5.81984 0Z"
+        fill="black"
+        fillOpacity="0.4"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M11.5973 0L14.5073 5.02622L17.3841 0H11.5973ZM23.2132 0H29L26.1232 5.02621L23.2132 10.0524L26.1232 15.0787H20.3033L17.3934 20.1049L14.5165 15.0787L17.3934 10.0524L14.5165 5.02621L17.3934 0L20.3033 5.02621L23.2132 0ZM14.5079 15.0714L11.598 20.0976H17.3848L14.5079 15.0714ZM26.1232 15.0787L29 20.1049H23.2132L20.3033 15.0787H26.1232Z"
+        fill="black"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <rect width="29" height="21" fill="white" />
+      </clipPath>
+    </defs>
+  </Shell>
+);
+
+export const CxJSIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
+  <Shell {...props}>
+    <g clipPath="url(#clip0)">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M11 0L13.91 5.02622L16.7868 0H11ZM22.6159 0H28.4027L25.5259 5.02621L22.6159 10.0524L25.5259 15.0787H19.706L16.7961 20.1049L13.9192 15.0787L16.7961 10.0524L13.9192 5.02621L16.7961 0L19.706 5.02621L22.6159 0ZM13.9106 15.0714L11.0007 20.0976H16.7875L13.9106 15.0714ZM25.5259 15.0787L28.4027 20.1049H22.6159L19.706 15.0787H25.5259Z"
+        fill="white"
+      />
+      <path
+        d="M4.81984 0H10.6066L13.5165 5.02623H7.69669L4.81984 10.0524L7.69669 15.0787H13.5165L10.6066 20.1049H4.81984L-1 10.0524L4.81984 0Z"
+        fill="white"
+        fillOpacity="0.4"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <rect width="29" height="21" fill="white" />
+      </clipPath>
+    </defs>
+  </Shell>
+);
