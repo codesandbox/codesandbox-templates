@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const EmberIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const EmberIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M28.9231 0H3.07692C1.37759 0 0 1.37759 0 3.07692V28.9231C0 30.6224 1.37759 32 3.07692 32H28.9231C30.6224 32 32 30.6224 32 28.9231V3.07692C32 1.37759 30.6224 0 28.9231 0Z"
@@ -16,7 +19,9 @@ export const EmberIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const EmberIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const EmberIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -27,7 +32,9 @@ export const EmberIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const EmberIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const EmberIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

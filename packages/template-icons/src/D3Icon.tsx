@@ -1,8 +1,11 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
+
+import { SVGIcon } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const D3Icon: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const D3Icon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => {
   const id = useUniqueId();
 
   return (
@@ -103,7 +106,9 @@ export const D3Icon: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const D3IconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const D3IconDark: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M29.9911 21.3708C29.801 25.5866 26.3132 28.9575 22.0521 28.9575H21.476L17.2206 24.7653C17.5707 24.2716 17.8961 23.7602 18.1858 23.2269H22.0521C23.2749 23.2269 24.27 22.2324 24.27 21.009C24.27 19.7862 23.2749 18.7911 22.0521 18.7911H19.7642C19.9385 17.8696 20.0338 16.9193 20.0338 15.9472C20.0338 14.9602 19.9367 13.9964 19.7561 13.0602H21.1773L29.9661 21.7201C29.9765 21.604 29.9848 21.488 29.9911 21.3708ZM4.75168 2.89444H2.43991V8.62506H4.75168C8.78939 8.62506 12.0747 11.9095 12.0747 15.9472C12.0747 17.0457 11.8297 18.0884 11.3944 19.0246L15.6119 23.1804C16.9966 21.1084 17.8062 18.6208 17.8062 15.9472C17.8062 8.74998 11.9498 2.89444 4.75168 2.89444Z"
@@ -122,7 +127,9 @@ export const D3IconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const D3IconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const D3IconLight: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M29.9911 21.3708C29.801 25.5866 26.3132 28.9575 22.0521 28.9575H21.476L17.2206 24.7653C17.5707 24.2716 17.8961 23.7602 18.1858 23.2269H22.0521C23.2749 23.2269 24.27 22.2324 24.27 21.009C24.27 19.7862 23.2749 18.7911 22.0521 18.7911H19.7642C19.9385 17.8696 20.0338 16.9193 20.0338 15.9472C20.0338 14.9602 19.9367 13.9964 19.7561 13.0602H21.1773L29.9661 21.7201C29.9765 21.604 29.9848 21.488 29.9911 21.3708ZM4.75168 2.89444H2.43991V8.62506H4.75168C8.78939 8.62506 12.0747 11.9095 12.0747 15.9472C12.0747 17.0457 11.8297 18.0884 11.3944 19.0246L15.6119 23.1804C16.9966 21.1084 17.8062 18.6208 17.8062 15.9472C17.8062 8.74998 11.9498 2.89444 4.75168 2.89444Z"

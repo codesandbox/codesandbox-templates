@@ -1,8 +1,11 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
+
+import { SVGIcon } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const RollupIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const RollupIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => {
   const id = useUniqueId();
 
   return (
@@ -118,8 +121,11 @@ export const RollupIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const RollupIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const RollupIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => {
   const id = useUniqueId();
+
   return (
     <SVGIcon {...props}>
       <path
@@ -162,8 +168,11 @@ export const RollupIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const RollupIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const RollupIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => {
   const id = useUniqueId();
+
   return (
     <SVGIcon {...props}>
       <path

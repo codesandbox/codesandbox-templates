@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const JavaScriptIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const JavaScriptIcon: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path d="M0 0H32V32H0V0Z" fill="#F7DF1E" />
     <path
@@ -15,7 +18,9 @@ export const JavaScriptIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const JavaScriptIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const JavaScriptIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -25,7 +30,9 @@ export const JavaScriptIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
     />
   </SVGIcon>
 );
-export const JavaScriptIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const JavaScriptIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

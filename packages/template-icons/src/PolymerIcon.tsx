@@ -1,8 +1,11 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
+
+import { SVGIcon } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const PolymerIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const PolymerIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => {
   const id = useUniqueId();
 
   return (
@@ -123,8 +126,11 @@ export const PolymerIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const PolymerIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const PolymerIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => {
   const id = useUniqueId();
+
   return (
     <SVGIcon {...props}>
       <g clipPath={`url(#clip_${id})`}>
@@ -151,16 +157,16 @@ export const PolymerIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const PolymerIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
-  return (
-    <SVGIcon {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9.60168 10.5429L6.40097 16.0857L12.8016 27.1718H6.40087L0 16.0859L6.40086 4.99997L9.60168 10.5429ZM25.4007 4.99997H19L25.4007 16.0861L22.2 21.6289L25.4008 27.1718L31.8017 16.0859L25.4007 4.99997Z"
-        fill="white"
-      />
-      <path d="M12.5 5H6.5L19 27H25.5L12.5 5Z" fill="white" fillOpacity="0.4" />
-    </SVGIcon>
-  );
-};
+export const PolymerIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
+  <SVGIcon {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M9.60168 10.5429L6.40097 16.0857L12.8016 27.1718H6.40087L0 16.0859L6.40086 4.99997L9.60168 10.5429ZM25.4007 4.99997H19L25.4007 16.0861L22.2 21.6289L25.4008 27.1718L31.8017 16.0859L25.4007 4.99997Z"
+      fill="white"
+    />
+    <path d="M12.5 5H6.5L19 27H25.5L12.5 5Z" fill="white" fillOpacity="0.4" />
+  </SVGIcon>
+);

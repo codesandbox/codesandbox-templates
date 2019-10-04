@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const MarionetteIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const MarionetteIcon: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       d="M18.3668 14.4869L21.368 7.38807C21.4035 7.30278 21.503 7.26244 21.5891 7.29816C21.6747 7.33369 21.7157 7.43178 21.6797 7.51725L19.0347 13.7724L18.3668 14.4869Z"
@@ -66,7 +69,9 @@ export const MarionetteIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const MarionetteIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const MarionetteIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -100,7 +105,9 @@ export const MarionetteIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const MarionetteIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const MarionetteIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

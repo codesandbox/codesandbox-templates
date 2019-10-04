@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const MeteorIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const MeteorIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M0 0L27.4047 29.0282C27.4047 29.0282 28.3384 29.6867 29.0523 28.9185C29.7663 28.1503 29.2171 27.382 29.2171 27.382L0 0Z"
@@ -34,7 +37,9 @@ export const MeteorIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const MeteorIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const MeteorIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -45,7 +50,9 @@ export const MeteorIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const MeteorIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const MeteorIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

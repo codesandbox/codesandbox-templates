@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const VueIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const VueIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M25.6 2.1875H32L16 29.7875L0 2.1875H6.32H12.24L16 8.5875L19.68 2.1875H25.6Z"
@@ -18,7 +21,9 @@ export const VueIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const VueIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const VueIconDark: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M2 4.91406L16 29.0641L30 4.91406H24.4L16 19.4041L7.53 4.91406H2Z"
@@ -32,7 +37,9 @@ export const VueIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const VueIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const VueIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       d="M2 4.91406L16 29.0641L30 4.91406H24.4L16 19.4041L7.53 4.91406H2Z"
