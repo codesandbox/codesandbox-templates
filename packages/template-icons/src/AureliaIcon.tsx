@@ -1,24 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const AureliaIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const AureliaIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <SVGIcon {...props}>
       <path
         d="M20.8856 5.75526L17.9255 7.73085L14.8761 3.16098L17.8362 1.18539L20.8856 5.75526Z"
         fill={`url(#Aurelia_Paint0_Linear_${id})`}
@@ -182,6 +170,28 @@ export const AureliaIcon: React.FC<SVGIconProps> = ({
           <stop offset="1" stopColor="#ED2C89" />
         </linearGradient>
       </defs>
-    </svg>
+    </SVGIcon>
   );
 };
+
+export const AureliaIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.169 8.30349L9.53175 12.0654L3.99063 3.76189L9.62788 0L15.169 8.30349ZM3.77815 15.9049L8.06889 13.0416L5.21548 8.76569L0.924744 11.629L3.77815 15.9049ZM27.2085 16.8733L25.3412 14.075L22.5712 15.9235L24.4386 18.7218L27.2085 16.8733ZM26.5256 25.3216L20.968 16.9934L15.3307 20.7553L20.8885 29.0835L26.5256 25.3216ZM13.8679 21.7314L15.7352 24.5297L11.4445 27.3931L9.57703 24.5948L13.8679 21.7314ZM16.7722 7.23361L19.5422 5.38514L16.6888 1.10931L13.9188 2.95778L16.7722 7.23361ZM3.11654 6.00299L4.18056 7.59744L2.58611 8.66146L1.52209 7.06701L3.11654 6.00299ZM8.86258 25.1174L9.92659 26.7119L8.33214 27.7759L7.26813 26.1814L8.86258 25.1174ZM4.66805 26.7232L0 19.6712L24.9466 2.98584L29.8415 9.92534L4.66805 26.7232Z"
+      fill="black"
+    />
+  </SVGIcon>
+);
+
+export const AureliaIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M15.169 8.30349L9.53175 12.0654L3.99063 3.76189L9.62788 0L15.169 8.30349ZM3.77815 15.9049L8.06889 13.0416L5.21548 8.76569L0.924744 11.629L3.77815 15.9049ZM27.2085 16.8733L25.3412 14.075L22.5712 15.9235L24.4386 18.7218L27.2085 16.8733ZM26.5256 25.3216L20.968 16.9934L15.3307 20.7553L20.8885 29.0835L26.5256 25.3216ZM13.8679 21.7314L15.7352 24.5297L11.4445 27.3931L9.57703 24.5948L13.8679 21.7314ZM16.7722 7.23361L19.5422 5.38514L16.6888 1.10931L13.9188 2.95778L16.7722 7.23361ZM3.11654 6.00299L4.18056 7.59744L2.58611 8.66146L1.52209 7.06701L3.11654 6.00299ZM8.86258 25.1174L9.92659 26.7119L8.33214 27.7759L7.26813 26.1814L8.86258 25.1174ZM4.66805 26.7232L0 19.6712L24.9466 2.98584L29.8415 9.92534L4.66805 26.7232Z"
+      fill="white"
+    />
+  </SVGIcon>
+);

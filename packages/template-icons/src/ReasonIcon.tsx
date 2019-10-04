@@ -1,24 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const ReasonIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const ReasonIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <SVGIcon {...props}>
       <g filter={`url(#Reason_Filter0_i_${id})`}>
         <path d="M31.7064 0H0V31.7064H31.7064V0Z" fill="black" />
       </g>
@@ -102,6 +90,32 @@ export const ReasonIcon: React.FC<SVGIconProps> = ({
           <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
         </filter>
       </defs>
-    </svg>
+    </SVGIcon>
+  );
+};
+
+export const ReasonIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
+  return (
+    <SVGIcon {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M0 0H30V30H0V0ZM14.403 27.3611H17.7955L15.4028 23.608C16.7303 22.9197 17.4514 21.6414 17.4514 19.9042C17.4514 17.3475 15.7142 15.8725 12.6658 15.8725H7.50332V27.3611H10.5025V24.1817H12.7314L14.403 27.3611ZM10.5025 21.7889V18.2653H12.6822C13.895 18.2653 14.5997 18.8717 14.5997 20.0025C14.5997 21.1661 13.895 21.7889 12.6822 21.7889H10.5025ZM28.4319 15.8725H19.3689V27.3611H28.5958V24.9683H22.368V22.805L27.8419 22.7886V20.4122H22.368V18.2653H28.4319V15.8725Z"
+        fill="black"
+      />
+    </SVGIcon>
+  );
+};
+
+export const ReasonIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
+  return (
+    <SVGIcon {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M0 0H30V30H0V0ZM14.403 27.3611H17.7955L15.4028 23.608C16.7303 22.9197 17.4514 21.6414 17.4514 19.9042C17.4514 17.3475 15.7142 15.8725 12.6658 15.8725H7.50332V27.3611H10.5025V24.1817H12.7314L14.403 27.3611ZM10.5025 21.7889V18.2653H12.6822C13.895 18.2653 14.5997 18.8717 14.5997 20.0025C14.5997 21.1661 13.895 21.7889 12.6822 21.7889H10.5025ZM28.4319 15.8725H19.3689V27.3611H28.5958V24.9683H22.368V22.805L27.8419 22.7886V20.4122H22.368V18.2653H28.4319V15.8725Z"
+        fill="white"
+      />
+    </SVGIcon>
   );
 };

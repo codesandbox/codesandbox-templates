@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import * as Icons from "../index.ts";
+import { Icons } from "../index.ts";
 
 Object.entries(Icons).forEach(([name, Icon]) => {
   describe(`${name}`, () => {

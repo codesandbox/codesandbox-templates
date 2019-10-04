@@ -29,10 +29,10 @@
   },
   "main": "src/index.ts",
   "scripts": {
-    "dev": "nodemon --watch src --watch example --exec run-s build:pkg start",
-    "start": "react-scripts start",
+    "dev": "nodemon --watch src --watch example --exec run-s build:pkg",
+    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "deploy": "run-s build:pkg build:example",
-    "build:pkg": "pack build",
+    "build": "pack build",
     "build:example": "react-scripts build",
     "lint": "eslint ./src",
     "test": "yarn lint && yarn typecheck && jest -c ./jest.config.js",
@@ -79,6 +79,7 @@
     "pretty-quick": "^1.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-scripts": "^3.1.2",
     "typescript": "^3.5.3"
   },
   "peerDependencies": {

@@ -1,24 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const PolymerIcon: React.FC<SVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
-  ...props
-}) => {
+export const PolymerIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <svg
-      width={scale * width}
-      height={scale * height}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
+    <SVGIcon {...props}>
       <g clipPath={`url(#Polymer_Clip0_${id})`}>
         <path
           d="M19.2017 27.1718L6.40086 4.99997H12.8017L25.6026 27.1718H19.2017Z"
@@ -131,6 +119,48 @@ export const PolymerIcon: React.FC<SVGIconProps> = ({
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </SVGIcon>
+  );
+};
+
+export const PolymerIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
+  const id = useUniqueId();
+  return (
+    <SVGIcon {...props}>
+      <g clipPath={`url(#clip_${id})`}>
+        <path
+          d="M19.0009 27.1719L6.20001 5H12.6009L25.4017 27.1719H19.0009Z"
+          fill="black"
+          fillOpacity="0.4"
+        />
+        <path
+          d="M6.40097 16.0857L9.60168 10.5429L6.40086 4.99997L0 16.0859L6.40087 27.1718H12.8016L6.40097 16.0857Z"
+          fill="black"
+        />
+        <path
+          d="M19 4.99997H25.4007L31.8017 16.0859L25.4008 27.1718L22.2 21.6289L25.4007 16.0861L19 4.99997Z"
+          fill="black"
+        />
+      </g>
+      <defs>
+        <clipPath id={`clip_${id}`}>
+          <rect width="32" height="32" fill="white" />
+        </clipPath>
+      </defs>
+    </SVGIcon>
+  );
+};
+
+export const PolymerIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
+  return (
+    <SVGIcon {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9.60168 10.5429L6.40097 16.0857L12.8016 27.1718H6.40087L0 16.0859L6.40086 4.99997L9.60168 10.5429ZM25.4007 4.99997H19L25.4007 16.0861L22.2 21.6289L25.4008 27.1718L31.8017 16.0859L25.4007 4.99997Z"
+        fill="white"
+      />
+      <path d="M12.5 5H6.5L19 27H25.5L12.5 5Z" fill="white" fillOpacity="0.4" />
+    </SVGIcon>
   );
 };
