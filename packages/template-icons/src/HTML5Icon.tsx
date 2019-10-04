@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const HTML5Icon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const HTML5Icon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#HTML5_Clip0_${id})`}>
         <path
           d="M30.216 0L27.6454 28.7967L16.0907 32L4.56783 28.8012L2 0H30.216Z"
@@ -39,13 +38,13 @@ export const HTML5Icon: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const HTML5IconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const HTML5IconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -59,13 +58,13 @@ export const HTML5IconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         d="M23.7726 25.8899L15.5 28.1833V24.935L21.9053 23.1598L21.9524 22.631L22.6878 14.3914L22.7642 13.551H15.5V10.3461H23.049L23.1118 9.64259L23.2544 8.05596L23.3292 7.2163H15.5V4.08656H25.7189L23.7726 25.8899ZM15.5 16.6807V21.679L18.9798 20.7398L19.3431 16.6807H15.5Z"
         fill="black"
       />
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const HTML5IconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const HTML5IconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -79,6 +78,6 @@ export const HTML5IconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         d="M23.7726 25.8899L15.5 28.1833V24.935L21.9053 23.1598L21.9524 22.631L22.6878 14.3914L22.7642 13.551H15.5V10.3461H23.049L23.1118 9.64259L23.2544 8.05596L23.3292 7.2163H15.5V4.08656H25.7189L23.7726 25.8899ZM15.5 16.6807V21.679L18.9798 20.7398L19.3431 16.6807H15.5Z"
         fill="white"
       />
-    </Shell>
+    </SVGIcon>
   );
 };

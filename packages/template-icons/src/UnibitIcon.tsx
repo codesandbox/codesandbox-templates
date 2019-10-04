@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const UnibitIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const UnibitIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -45,13 +44,13 @@ export const UnibitIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="1" stopColor="#0495F3" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const UnibitIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const UnibitIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -64,13 +63,13 @@ export const UnibitIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         d="M3.01012 10.0467C2.92573 9.03744 3.42903 8.07122 4.2969 7.57606L15.1223 1.3371C15.5125 1.11228 15.9461 1 16.3797 1C16.8201 1 17.2607 1.11584 17.6551 1.34752L28.2763 7.58652C29.1372 8.08335 29.6387 9.04207 29.5631 10.0467V10.1654C29.6434 11.1798 29.1348 12.1485 28.262 12.6443L17.6408 18.6751C16.8726 19.1074 15.9398 19.1074 15.1714 18.6751L4.34593 12.6443C3.45967 12.1582 2.93658 11.1875 3.01012 10.1653V10.0467ZM22.6119 8.2987C22.5376 8.15818 22.4266 8.04242 22.2919 7.96468L16.5866 4.53906C16.4591 4.46432 16.3206 4.42845 16.184 4.42845C15.8969 4.42845 15.6181 4.58586 15.4671 4.86601C15.2444 5.27862 15.3846 5.80163 15.7802 6.03399L20.2206 8.71213L16.1814 11.1532L11.0861 7.96468C10.6943 7.72872 10.1935 7.86881 9.9675 8.27757C9.74152 8.68633 9.87578 9.2087 10.2673 9.4447L15.768 12.8852C16.0214 13.0377 16.3333 13.0377 16.5867 12.8852L22.2919 9.45961C22.6876 9.23111 22.8309 8.71153 22.6119 8.2987Z"
         fill="black"
       />
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const UnibitIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const UnibitIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -83,6 +82,6 @@ export const UnibitIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         d="M3.01012 10.0467C2.92573 9.03744 3.42903 8.07122 4.2969 7.57606L15.1223 1.3371C15.5125 1.11228 15.9461 1 16.3797 1C16.8201 1 17.2607 1.11584 17.6551 1.34752L28.2763 7.58652C29.1372 8.08335 29.6387 9.04207 29.5631 10.0467V10.1654C29.6434 11.1798 29.1348 12.1485 28.262 12.6443L17.6408 18.6751C16.8726 19.1074 15.9398 19.1074 15.1714 18.6751L4.34593 12.6443C3.45967 12.1582 2.93658 11.1875 3.01012 10.1653V10.0467ZM22.6119 8.2987C22.5376 8.15818 22.4266 8.04242 22.2919 7.96468L16.5866 4.53906C16.4591 4.46432 16.3206 4.42845 16.184 4.42845C15.8969 4.42845 15.6181 4.58586 15.4671 4.86601C15.2444 5.27862 15.3846 5.80163 15.7802 6.03399L20.2206 8.71213L16.1814 11.1532L11.0861 7.96468C10.6943 7.72872 10.1935 7.86881 9.9675 8.27757C9.74152 8.68633 9.87578 9.2087 10.2673 9.4447L15.768 12.8852C16.0214 13.0377 16.3333 13.0377 16.5867 12.8852L22.2919 9.45961C22.6876 9.23111 22.8309 8.71153 22.6119 8.2987Z"
         fill="white"
       />
-    </Shell>
+    </SVGIcon>
   );
 };

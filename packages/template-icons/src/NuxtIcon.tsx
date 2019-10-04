@@ -1,9 +1,8 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 
-export const NuxtIcon: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const NuxtIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -20,11 +19,11 @@ export const NuxtIcon: React.FC<SVGIconProps> = ({ ...props }) => (
       d="M26.6195 27.2566V27.1858L26.6903 27.0442C26.7611 26.7611 26.8319 26.4779 26.7611 26.1947L26.4779 25.3451L19.2566 12.7434L18.1947 10.8319H18.1239L17.0619 12.7434L9.8407 25.3451L9.55752 26.1947C9.48896 26.5547 9.53863 26.9272 9.69911 27.2566C9.9823 27.6814 10.4071 28.1062 11.3982 28.1062H24.8496C25.0619 28.1062 26.1239 28.0354 26.6195 27.2566ZM18.1239 14.6549L24.708 26.1947H11.5398L18.1239 14.6549Z"
       fill="white"
     />
-  </Shell>
+  </SVGIcon>
 );
 
-export const NuxtIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const NuxtIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -43,11 +42,11 @@ export const NuxtIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
       d="M25.2636 25.388V25.326L25.3256 25.2021C25.3875 24.9542 25.4495 24.7063 25.3875 24.4584L25.1397 23.7148L18.8188 12.6842L17.8892 11.011H17.8273L16.8977 12.6842L10.5768 23.7148L10.3289 24.4584C10.2689 24.7735 10.3124 25.0996 10.4529 25.388C10.7008 25.7598 11.0726 26.1316 11.9402 26.1316H23.7144C23.9003 26.1316 24.8298 26.0696 25.2636 25.388ZM17.8273 14.3574L23.5904 24.4584H12.0641L17.8273 14.3574Z"
       fill="black"
     />
-  </Shell>
+  </SVGIcon>
 );
 
-export const NuxtIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const NuxtIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -66,5 +65,5 @@ export const NuxtIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
       d="M25.2636 25.388V25.326L25.3256 25.2021C25.3875 24.9542 25.4495 24.7063 25.3875 24.4584L25.1397 23.7148L18.8188 12.6842L17.8892 11.011H17.8273L16.8977 12.6842L10.5768 23.7148L10.3289 24.4584C10.2689 24.7735 10.3124 25.0996 10.4529 25.388C10.7008 25.7598 11.0726 26.1316 11.9402 26.1316H23.7144C23.9003 26.1316 24.8298 26.0696 25.2636 25.388ZM17.8273 14.3574L23.5904 24.4584H12.0641L17.8273 14.3574Z"
       fill="white"
     />
-  </Shell>
+  </SVGIcon>
 );

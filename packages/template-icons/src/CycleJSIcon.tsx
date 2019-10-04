@@ -1,12 +1,11 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const CycleJSIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const CycleJSIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M31.995 24.79C31.98 25.115 31.89 25.435 31.725 25.725L28.695 30.975C28.33 31.61 27.655 32 26.925 32H10.11C9.38 32 8.705 31.61 8.34 30.98L0.275 17.025C0.09 16.705 0 16.355 0 16C0 15.645 0.07 15.275 0.285 14.915L8.345 1.02C8.71 0.39 9.385 0 10.11 0H26.925C27.655 0 28.33 0.39 28.695 1.02C28.695 1.02 31.61 5.795 31.82 6.135C32.03 6.475 31.995 6.905 31.995 7.255C31.995 7.555 31.91 7.965 31.83 8.29C31.75 8.615 29.31 18.505 29.31 18.505L23.985 7.18H13.07L7.96 16L13.07 24.82H23.98L31.995 24.79Z"
         fill={`url(#CycleJS_Paint0_Linear_${id})`}
@@ -39,12 +38,12 @@ export const CycleJSIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="1" stopColor="#5A919B" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const CycleJSIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const CycleJSIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       d="M24.9961 19.3672C24.9844 19.6211 24.9141 19.8711 24.7852 20.0977L22.418 24.1992C22.1328 24.6953 21.6055 25 21.0352 25H7.89844C7.32812 25 6.80078 24.6953 6.51562 24.2031L0.214844 13.3008C0.0703125 13.0508 0 12.7773 0 12.5C0 12.2227 0.0546875 11.9336 0.222656 11.6523L6.51953 0.796875C6.80469 0.304688 7.33203 0 7.89844 0H21.0352C21.6055 0 22.1328 0.304688 22.418 0.796875C22.418 0.796875 24.6953 4.52734 24.8594 4.79297C25.0234 5.05859 24.9961 5.39453 24.9961 5.66797C24.9961 5.90234 24.9297 6.22266 24.8672 6.47656C24.8047 6.73047 22.8984 14.457 22.8984 14.457L18.7383 5.60938H10.2109L6.21875 12.5L10.2109 19.3906H18.7344L24.9961 19.3672Z"
       fill="white"
@@ -54,11 +53,11 @@ export const CycleJSIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
       fill="white"
       fillOpacity="0.6"
     />
-  </Shell>
+  </SVGIcon>
 );
 
-export const CycleJSIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const CycleJSIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       d="M24.9961 19.3672C24.9844 19.6211 24.9141 19.8711 24.7852 20.0977L22.418 24.1992C22.1328 24.6953 21.6055 25 21.0352 25H7.89844C7.32812 25 6.80078 24.6953 6.51562 24.2031L0.214844 13.3008C0.0703125 13.0508 0 12.7773 0 12.5C0 12.2227 0.0546875 11.9336 0.222656 11.6523L6.51953 0.796875C6.80469 0.304688 7.33203 0 7.89844 0H21.0352C21.6055 0 22.1328 0.304688 22.418 0.796875C22.418 0.796875 24.6953 4.52734 24.8594 4.79297C25.0234 5.05859 24.9961 5.39453 24.9961 5.66797C24.9961 5.90234 24.9297 6.22266 24.8672 6.47656C24.8047 6.73047 22.8984 14.457 22.8984 14.457L18.7383 5.60938H10.2109L6.21875 12.5L10.2109 19.3906H18.7344L24.9961 19.3672Z"
       fill="black"
@@ -68,5 +67,5 @@ export const CycleJSIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
       fill="black"
       fillOpacity="0.6"
     />
-  </Shell>
+  </SVGIcon>
 );

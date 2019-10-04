@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const CxJSIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const CxJSIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M9.81333 10.8444H3.59111L6.72 16.2489L9.81333 10.8444Z"
         fill={`url(#CxJS_Paint0_lLnear_${id})`}
@@ -396,14 +395,14 @@ export const CxJSIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="0.989" stopColor="#D970AC" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const CxJSIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const CxJSIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#clip_${id})`}>
         <path
           d="M5.81984 0H11.6066L14.5165 5.02623H8.69669L5.81984 10.0524L8.69669 15.0787H14.5165L11.6066 20.1049H5.81984L0 10.0524L5.81984 0Z"
@@ -422,14 +421,14 @@ export const CxJSIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="29" height="21" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const CxJSIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const CxJSIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#clip_${id})`}>
         <path
           fillRule="evenodd"
@@ -448,6 +447,6 @@ export const CxJSIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="29" height="21" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };

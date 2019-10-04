@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const VuePressIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const VuePressIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -152,13 +151,13 @@ export const VuePressIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="0.35" stopColor="#2C3247" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const VuePressIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const VuePressIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -191,13 +190,13 @@ export const VuePressIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="white"
         fillOpacity="0.2"
       />
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const VuePressIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const VuePressIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -230,6 +229,6 @@ export const VuePressIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="white"
         fillOpacity="0.2"
       />
-    </Shell>
+    </SVGIcon>
   );
 };

@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const PolymerIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const PolymerIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#Polymer_Clip0_${id})`}>
         <path
           d="M19.2017 27.1718L6.40086 4.99997H12.8017L25.6026 27.1718H19.2017Z"
@@ -120,14 +119,14 @@ export const PolymerIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const PolymerIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const PolymerIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#clip_${id})`}>
         <path
           d="M19.0009 27.1719L6.20001 5H12.6009L25.4017 27.1719H19.0009Z"
@@ -148,13 +147,13 @@ export const PolymerIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const PolymerIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const PolymerIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -162,6 +161,6 @@ export const PolymerIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="white"
       />
       <path d="M12.5 5H6.5L19 27H25.5L12.5 5Z" fill="white" fillOpacity="0.4" />
-    </Shell>
+    </SVGIcon>
   );
 };

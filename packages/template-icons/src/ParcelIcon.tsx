@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const ParcelIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const ParcelIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M17.5656 27.9156L26.3486 22.3624C26.3808 22.342 26.4233 22.3517 26.4436 22.3838C26.464 22.416 26.4543 22.4585 26.4221 22.4789L17.6103 28.0503C17.5992 28.0574 17.5864 28.061 17.5735 28.061L17.5656 27.9156Z"
         fill={`url(#Parcel_Paint0_lLnear_${id})`}
@@ -454,13 +453,13 @@ export const ParcelIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="0.6426" stopColor="#B2875D" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const ParcelIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const ParcelIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -474,13 +473,13 @@ export const ParcelIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="black"
         fillOpacity="0.2"
       />
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const ParcelIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const ParcelIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -494,6 +493,6 @@ export const ParcelIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="white"
         fillOpacity="0.2"
       />
-    </Shell>
+    </SVGIcon>
   );
 };

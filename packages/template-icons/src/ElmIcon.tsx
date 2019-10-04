@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const ElmIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const ElmIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#Elm_Clip0_${id})`}>
         <path d="M16 16.8777L0.877846 32H31.1222L16 16.8777Z" fill="#5FB4CB" />
         <path
@@ -34,13 +33,13 @@ export const ElmIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const ElmIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const ElmIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -48,13 +47,13 @@ export const ElmIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="black"
         fillOpacity="0.9"
       />
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const ElmIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const ElmIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -62,6 +61,6 @@ export const ElmIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="white"
         fillOpacity="0.9"
       />
-    </Shell>
+    </SVGIcon>
   );
 };

@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const NodeIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const NodeIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#Node_Clip0_${id})`}>
         <path
           d="M16.7587 0.20289C16.2903 -0.0676604 15.7127 -0.0676604 15.2443 0.20289L2.70125 7.44109C2.2322 7.71164 1.94345 8.21154 1.94345 8.75319V23.2408C1.94345 23.7819 2.2322 24.2819 2.70075 24.5529L15.2437 31.7969C15.7127 32.0676 16.2902 32.0676 16.7592 31.7969L29.2993 24.5529C29.7677 24.2818 30.0565 23.7819 30.0565 23.2408V8.75274C30.0565 8.21159 29.7677 7.71164 29.2988 7.44114L16.7587 0.20289Z"
@@ -84,13 +83,13 @@ export const NodeIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const NodeIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const NodeIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M16.6639 2.17753C16.254 1.9408 15.7486 1.9408 15.3388 2.17753L4.36358 8.51096C3.95316 8.74769 3.7005 9.1851 3.7005 9.65905V22.3357C3.7005 22.8092 3.95316 23.2467 4.36314 23.4838L15.3383 29.8223C15.7486 30.0591 16.254 30.0591 16.6643 29.8223L27.6369 23.4838C28.0468 23.2466 28.2994 22.8092 28.2994 22.3357V9.65865C28.2994 9.18515 28.0468 8.74769 27.6364 8.511L16.6639 2.17753Z"
         fill="black"
@@ -105,13 +104,13 @@ export const NodeIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         d="M27.6644 23.4838C27.9842 23.2988 28.2229 22.9912 28.3133 22.6403L16.2484 2.02883C15.9334 1.96609 15.5992 2.01382 15.3157 2.17753L4.38382 8.47285L16.1934 29.9871C16.362 29.9641 16.5269 29.9096 16.6781 29.8224L27.6644 23.4838Z"
         fill="black"
       />
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const NodeIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const NodeIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M16.6639 2.17753C16.254 1.9408 15.7486 1.9408 15.3388 2.17753L4.36358 8.51096C3.95316 8.74769 3.7005 9.1851 3.7005 9.65905V22.3357C3.7005 22.8092 3.95316 23.2467 4.36314 23.4838L15.3383 29.8223C15.7486 30.0591 16.254 30.0591 16.6643 29.8223L27.6369 23.4838C28.0468 23.2466 28.2994 22.8092 28.2994 22.3357V9.65865C28.2994 9.18515 28.0468 8.74769 27.6364 8.511L16.6639 2.17753Z"
         fill="white"
@@ -126,6 +125,6 @@ export const NodeIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         d="M27.6644 23.4838C27.9842 23.2988 28.2229 22.9912 28.3133 22.6403L16.2484 2.02883C15.9334 1.96609 15.5992 2.01382 15.3157 2.17753L4.38382 8.47285L16.1934 29.9871C16.362 29.9641 16.5269 29.9096 16.6781 29.8224L27.6644 23.4838Z"
         fill="white"
       />
-    </Shell>
+    </SVGIcon>
   );
 };

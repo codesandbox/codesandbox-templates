@@ -1,7 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
 
-export const Shell: React.FC<SVGIconProps> = ({
+export interface ISVGIconProps extends React.HTMLAttributes<SVGElement> {
+  scale?: number;
+  width?: number;
+  height?: number;
+}
+
+export const SVGIcon: React.FC<ISVGIconProps> = ({
   scale = 1,
   width = 32,
   height = 32,

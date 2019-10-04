@@ -8867,7 +8867,7 @@ node-notifier@^5.2.1:
     growly "^1.3.0"
     is-wsl "^1.1.0"
     semver "^5.5.0"
-    shellwords "^0.1.1"
+    SVGIconwords "^0.1.1"
     which "^1.3.0"
 
 node-notifier@^5.4.2:
@@ -8878,7 +8878,7 @@ node-notifier@^5.4.2:
     growly "^1.3.0"
     is-wsl "^1.1.0"
     semver "^5.5.0"
-    shellwords "^0.1.1"
+    SVGIconwords "^0.1.1"
     which "^1.3.0"
 
 node-pre-gyp@^0.12.0:
@@ -9066,7 +9066,7 @@ npm-run-all@^4.1.5:
     minimatch "^3.0.4"
     pidtree "^0.3.0"
     read-pkg "^3.0.0"
-    shell-quote "^1.6.1"
+    SVGIcon-quote "^1.6.1"
     string.prototype.padend "^3.0.0"
 
 npm-run-path@^2.0.0:
@@ -10745,7 +10745,7 @@ react-dev-utils@^9.0.4:
     pkg-up "2.0.0"
     react-error-overlay "^6.0.2"
     recursive-readdir "2.2.2"
-    shell-quote "1.7.2"
+    SVGIcon-quote "1.7.2"
     sockjs-client "1.4.0"
     strip-ansi "5.2.0"
     text-table "0.2.0"
@@ -11643,14 +11643,14 @@ shebang-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
-shell-quote@1.7.2:
+SVGIcon-quote@1.7.2:
   version "1.7.2"
-  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
+  resolved "https://registry.yarnpkg.com/SVGIcon-quote/-/SVGIcon-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
-shell-quote@^1.6.1:
+SVGIcon-quote@^1.6.1:
   version "1.6.1"
-  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
+  resolved "https://registry.yarnpkg.com/SVGIcon-quote/-/SVGIcon-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
   integrity sha1-9HgZSczkAmlxJ0MOo7PFR29IF2c=
   dependencies:
     array-filter "~0.0.0"
@@ -11658,9 +11658,9 @@ shell-quote@^1.6.1:
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
 
-shellwords@^0.1.1:
+SVGIconwords@^0.1.1:
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
+  resolved "https://registry.yarnpkg.com/SVGIconwords/-/SVGIconwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:

@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const GridsomeIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const GridsomeIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16Z"
         fill={`url(#Gridsome_Paint0_Linear_${id})`}
@@ -56,13 +55,13 @@ export const GridsomeIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="1" stopColor="white" stopOpacity="0.5" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const GridsomeIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const GridsomeIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -81,13 +80,13 @@ export const GridsomeIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="black"
         fillOpacity="0.6"
       />
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const GridsomeIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const GridsomeIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -106,6 +105,6 @@ export const GridsomeIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
         fill="white"
         fillOpacity="0.6"
       />
-    </Shell>
+    </SVGIcon>
   );
 };

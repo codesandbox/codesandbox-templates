@@ -1,9 +1,8 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 
-export const VueIcon: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const VueIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       d="M25.6 2.1875H32L16 29.7875L0 2.1875H6.32H12.24L16 8.5875L19.68 2.1875H25.6Z"
       fill="#41B883"
@@ -16,11 +15,11 @@ export const VueIcon: React.FC<SVGIconProps> = ({ ...props }) => (
       d="M6.32 2.1875L16 18.8275L25.6 2.1875H19.68L16 8.5875L12.24 2.1875H6.32Z"
       fill="#35495E"
     />
-  </Shell>
+  </SVGIcon>
 );
 
-export const VueIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const VueIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       d="M2 4.91406L16 29.0641L30 4.91406H24.4L16 19.4041L7.53 4.91406H2Z"
       fill="black"
@@ -30,11 +29,11 @@ export const VueIconDark: React.FC<SVGIconProps> = ({ ...props }) => (
       fill="black"
       fillOpacity="0.6"
     />
-  </Shell>
+  </SVGIcon>
 );
 
-export const VueIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
-  <Shell {...props}>
+export const VueIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+  <SVGIcon {...props}>
     <path
       d="M2 4.91406L16 29.0641L30 4.91406H24.4L16 19.4041L7.53 4.91406H2Z"
       fill="black"
@@ -44,5 +43,5 @@ export const VueIconLight: React.FC<SVGIconProps> = ({ ...props }) => (
       fill="white"
       fillOpacity="0.6"
     />
-  </Shell>
+  </SVGIcon>
 );

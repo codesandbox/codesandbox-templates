@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const RollupIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const RollupIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#Rollup_Clip0_${id})`}>
         <path
           d="M28.4374 10.5146C28.4374 8.63436 27.945 6.87167 27.0776 5.34401C24.7778 2.97698 19.7751 2.42859 18.5328 5.33282C17.257 8.3098 20.676 11.6225 22.1701 11.3595C24.0727 11.0238 21.8344 6.65903 21.8344 6.65903C24.7442 12.1429 24.0727 10.4642 18.8126 15.5004C13.5525 20.5367 8.18055 31.1631 7.39714 31.6108C7.36356 31.6332 7.32999 31.65 7.29082 31.6667H27.9226C28.2863 31.6667 28.5214 31.2806 28.3591 30.9561L22.9647 20.2793C22.8472 20.0498 22.9311 19.7644 23.155 19.6357C26.311 17.8227 28.4374 14.4204 28.4374 10.5146Z"
@@ -115,14 +114,14 @@ export const RollupIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const RollupIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const RollupIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M25.8949 11.5601C25.8949 10.0294 25.494 8.59436 24.7879 7.35067C22.9155 5.42363 18.8428 4.97717 17.8314 7.34156C16.7927 9.76516 19.5762 12.4621 20.7926 12.248C22.3415 11.9746 20.5193 8.42125 20.5193 8.42125C22.8882 12.8858 22.3415 11.5191 18.0592 15.6192C13.7769 19.7193 9.40346 28.3704 8.76567 28.7349C8.73833 28.7531 8.711 28.7668 8.67911 28.7805H25.4758C25.7719 28.7805 25.9633 28.4661 25.8312 28.2019L21.4395 19.5097C21.3438 19.3229 21.4122 19.0906 21.5944 18.9858C24.1638 17.5098 25.8949 14.7399 25.8949 11.5601Z"
         fill="black"
@@ -159,14 +158,14 @@ export const RollupIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const RollupIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const RollupIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <path
         d="M25.8949 11.5601C25.8949 10.0294 25.494 8.59436 24.7879 7.35067C22.9155 5.42363 18.8428 4.97717 17.8314 7.34156C16.7927 9.76516 19.5762 12.4621 20.7926 12.248C22.3415 11.9746 20.5193 8.42125 20.5193 8.42125C22.8882 12.8858 22.3415 11.5191 18.0592 15.6192C13.7769 19.7193 9.40346 28.3704 8.76567 28.7349C8.73833 28.7531 8.711 28.7668 8.67911 28.7805H25.4758C25.7719 28.7805 25.9633 28.4661 25.8312 28.2019L21.4395 19.5097C21.3438 19.3229 21.4122 19.0906 21.5944 18.9858C24.1638 17.5098 25.8949 14.7399 25.8949 11.5601Z"
         fill="white"
@@ -203,6 +202,6 @@ export const RollupIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
           <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };

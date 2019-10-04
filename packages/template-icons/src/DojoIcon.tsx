@@ -1,13 +1,12 @@
 import React from "react";
-import { SVGIconProps } from "./types";
-import { Shell } from "./Shell";
+import { SVGIcon, ISVGIconProps } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const DojoIcon: React.FC<SVGIconProps> = ({ ...props }) => {
+export const DojoIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
 
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#Dojo_Clip0_${id})`}>
         <path
           d="M3.88722 19.2806C3.91241 19.3211 3.93759 19.3605 3.96387 19.3999C4.35327 19.9534 4.80765 20.4581 5.31728 20.9034C6.50419 21.876 7.99188 22.4066 9.52642 22.4046C9.62059 22.4046 9.71805 22.4046 9.8155 22.3969C10.8817 22.3111 11.9269 22.0522 12.9099 21.6304C12.4697 21.7011 12.0252 21.7417 11.5795 21.752C10.8224 21.7528 10.0735 21.5946 9.38138 21.2875C8.68929 20.9804 8.06944 20.5313 7.56201 19.9693C6.3042 19.978 5.0565 19.7442 3.88722 19.2806Z"
@@ -241,15 +240,15 @@ export const DojoIcon: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
 const styles = { mixBlendMode: "screen" } as React.CSSProperties;
-export const DojoIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
+export const DojoIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#Dojo_Clip0_${id})`}>
         <path
           d="M3.88722 19.2806C3.91241 19.3211 3.93759 19.3605 3.96387 19.3999C4.35327 19.9534 4.80765 20.4581 5.31728 20.9034C6.50419 21.876 7.99188 22.4066 9.52642 22.4046C9.62059 22.4046 9.71805 22.4046 9.8155 22.3969C10.8817 22.3111 11.9269 22.0522 12.9099 21.6304C12.4697 21.7011 12.0252 21.7417 11.5795 21.752C10.8224 21.7528 10.0735 21.5946 9.38138 21.2875C8.68929 20.9804 8.06944 20.5313 7.56201 19.9693C6.3042 19.978 5.0565 19.7442 3.88722 19.2806Z"
@@ -384,14 +383,14 @@ export const DojoIconLight: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
 
-export const DojoIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
+export const DojoIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   const id = useUniqueId();
   return (
-    <Shell {...props}>
+    <SVGIcon {...props}>
       <g clipPath={`url(#Dojo_Clip0_${id})`}>
         <path
           d="M3.88722 19.2806C3.91241 19.3211 3.93759 19.3605 3.96387 19.3999C4.35327 19.9534 4.80765 20.4581 5.31728 20.9034C6.50419 21.876 7.99188 22.4066 9.52642 22.4046C9.62059 22.4046 9.71805 22.4046 9.8155 22.3969C10.8817 22.3111 11.9269 22.0522 12.9099 21.6304C12.4697 21.7011 12.0252 21.7417 11.5795 21.752C10.8224 21.7528 10.0735 21.5946 9.38138 21.2875C8.68929 20.9804 8.06944 20.5313 7.56201 19.9693C6.3042 19.978 5.0565 19.7442 3.88722 19.2806Z"
@@ -526,6 +525,6 @@ export const DojoIconDark: React.FC<SVGIconProps> = ({ ...props }) => {
           <rect width="32" height="32" fill="white" />
         </clipPath>
       </defs>
-    </Shell>
+    </SVGIcon>
   );
 };
