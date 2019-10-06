@@ -1,6 +1,6 @@
 {
   "name": "@codesandbox/template-icons",
-  "version": "0.7.1",
+  "version": "1.0.2",
   "description": "Collection of SVG icons as React Components for usage with CodeSandbox Templates.",
   "keywords": [
     "codesandbox",
@@ -29,9 +29,9 @@
   },
   "main": "src/index.ts",
   "scripts": {
-    "dev": "nodemon --watch src --watch example --exec run-s build:pkg",
+    "dev": "nodemon --watch src --watch example --exec run-s build",
     "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
-    "deploy": "run-s build:pkg build:example",
+    "deploy": "run-s build build:example",
     "build": "pack build",
     "build:example": "react-scripts build",
     "lint": "eslint ./src",
@@ -40,7 +40,7 @@
     "test:coverage": "jest -c ./jest.config.js && codecov",
     "typecheck": "tsc --noEmit",
     "release": "pack publish",
-    "version": "yarn build:pkg"
+    "version": "yarn build"
   },
   "dependencies": {},
   "devDependencies": {
