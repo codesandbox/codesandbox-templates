@@ -23,9 +23,9 @@ export const AdonisIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
 export const AdonisIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.8734 7.06324L9.61961 0.555557L0 19.7948H6.50764L4.50359 23.8029H27.5618L16.0327 0.744736L12.8734 7.06324ZM7.50406 19.7948H19.2392L13.3717 8.05967L15.9015 3L25.8029 22.8029H6.00001L7.50406 19.7948Z"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M14.8734 10.5077L11.6196 4L2 23.2392H8.50764L6.50359 27.2473H29.5618L18.0327 4.18918L14.8734 10.5077ZM9.50406 23.2392H21.2392L15.3717 11.5041L17.9015 6.44444L27.8029 26.2473H8.00001L9.50406 23.2392Z"
       fill="black"
     />
   </SVGIcon>
@@ -34,9 +34,9 @@ export const AdonisIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
 export const AdonisIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M12.8734 7.06324L9.61961 0.555557L0 19.7948H6.50764L4.50359 23.8029H27.5618L16.0327 0.744736L12.8734 7.06324ZM7.50406 19.7948H19.2392L13.3717 8.05967L15.9015 3L25.8029 22.8029H6.00001L7.50406 19.7948Z"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M14.8734 10.5077L11.6196 4L2 23.2392H8.50764L6.50359 27.2473H29.5618L18.0327 4.18918L14.8734 10.5077ZM9.50406 23.2392H21.2392L15.3717 11.5041L17.9015 6.44444L27.8029 26.2473H8.00001L9.50406 23.2392Z"
       fill="white"
     />
   </SVGIcon>

@@ -1,10 +1,39 @@
-import React from "react"
-import ReactDOM from "react-dom"
-//import { App } from "./App"
-import { ReactIcon } from "../pkg"
+import React from "react";
+import ReactDOM from "react-dom";
+// eslint-disable-next-line
+import { DarkIcons, LightIcons, ColorIcons } from "@codesandbox/template-icons";
 
-const App = () => (
+import "./style.css";
 
-)
-
-ReactDOM.render(<App />, document.getElementById(`root`))
+function App() {
+  return (
+    <div className="App">
+      <ul>
+        {Object.keys(DarkIcons).map(key => (
+          <li>
+            <span>{key}</span>
+            <div>{DarkIcons[key]({})}</div>
+          </li>
+        ))}
+      </ul>
+      <ul className="light">
+        {Object.keys(LightIcons).map(key => (
+          <li>
+            <span>{key}</span>
+            <div>{LightIcons[key]({})}</div>
+          </li>
+        ))}
+      </ul>
+      <ul>
+        {Object.keys(ColorIcons).map(key => (
+          <li>
+            <span>{key}</span>
+            <div>{ColorIcons[key]({})}</div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+const mountNode = document.getElementById("app");
+ReactDOM.render(<App />, mountNode);

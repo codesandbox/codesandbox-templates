@@ -3,11 +3,13 @@ node_modules
 
 # Ignored Directories
 .coverage
+.cache
 /pkg
-/dist
 /build
 /.awcache
 /.ssh
+dist
+.cache
 
 # Ignored Files
 .DS_STORE
