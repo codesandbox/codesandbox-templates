@@ -41,7 +41,6 @@ export const VueIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
     <path
       d="M7.53 3.91406L16 18.4741L24.4 3.91406H19.22L16 9.5141L12.71 3.91406H7.53Z"
       fill="white"
-      fillOpacity="0.6"
     />
   </SVGIcon>
 );

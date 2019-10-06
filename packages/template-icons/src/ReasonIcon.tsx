@@ -95,27 +95,81 @@ export const ReasonIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
 };
 
 export const ReasonIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
+  const id = useUniqueId();
   return (
     <SVGIcon {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M0 0H30V30H0V0ZM14.403 27.3611H17.7955L15.4028 23.608C16.7303 22.9197 17.4514 21.6414 17.4514 19.9042C17.4514 17.3475 15.7142 15.8725 12.6658 15.8725H7.50332V27.3611H10.5025V24.1817H12.7314L14.403 27.3611ZM10.5025 21.7889V18.2653H12.6822C13.895 18.2653 14.5997 18.8717 14.5997 20.0025C14.5997 21.1661 13.895 21.7889 12.6822 21.7889H10.5025ZM28.4319 15.8725H19.3689V27.3611H28.5958V24.9683H22.368V22.805L27.8419 22.7886V20.4122H22.368V18.2653H28.4319V15.8725Z"
-        fill="black"
-      />
+      <g filter={`url(#filter_${id})`}>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1 1h30v30H1V1zm14.403 27.361h3.393l-2.393-3.753c1.327-.688 2.048-1.967 2.048-3.704 0-2.556-1.737-4.032-4.785-4.032H8.503v11.49h3v-3.18h2.228l1.672 3.18zm-3.9-5.572v-3.524h2.18c1.212 0 1.917.607 1.917 1.738 0 1.163-.705 1.786-1.918 1.786h-2.18zm17.929-5.917h-9.063v11.49h9.227v-2.394h-6.228v-2.163l5.474-.016v-2.377h-5.474v-2.147h6.064v-2.393z"
+          fill="#000"
+        />
+      </g>
+      <defs>
+        <filter
+          id={`filter_${id}`}
+          x="1"
+          y="1"
+          width="30"
+          height="30.278"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feColorMatrix
+            in="SourceAlpha"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy=".278" />
+          <feGaussianBlur stdDeviation=".278" />
+          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+          <feBlend in2="shape" result="effect1_innerShadow" />
+        </filter>
+      </defs>
     </SVGIcon>
   );
 };
 
 export const ReasonIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
+  const id = useUniqueId();
   return (
     <SVGIcon {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M0 0H30V30H0V0ZM14.403 27.3611H17.7955L15.4028 23.608C16.7303 22.9197 17.4514 21.6414 17.4514 19.9042C17.4514 17.3475 15.7142 15.8725 12.6658 15.8725H7.50332V27.3611H10.5025V24.1817H12.7314L14.403 27.3611ZM10.5025 21.7889V18.2653H12.6822C13.895 18.2653 14.5997 18.8717 14.5997 20.0025C14.5997 21.1661 13.895 21.7889 12.6822 21.7889H10.5025ZM28.4319 15.8725H19.3689V27.3611H28.5958V24.9683H22.368V22.805L27.8419 22.7886V20.4122H22.368V18.2653H28.4319V15.8725Z"
-        fill="white"
-      />
+      <g filter={`url(#filter_${id})`}>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1 1h30v30H1V1zm14.403 27.361h3.393l-2.393-3.753c1.327-.688 2.048-1.967 2.048-3.704 0-2.556-1.737-4.032-4.785-4.032H8.503v11.49h3v-3.18h2.228l1.672 3.18zm-3.9-5.572v-3.524h2.18c1.212 0 1.917.607 1.917 1.738 0 1.163-.705 1.786-1.918 1.786h-2.18zm17.929-5.917h-9.063v11.49h9.227v-2.394h-6.228v-2.163l5.474-.016v-2.377h-5.474v-2.147h6.064v-2.393z"
+          fill="#fff"
+        />
+      </g>
+      <defs>
+        <filter
+          id={`filter_${id}`}
+          x="1"
+          y="1"
+          width="30"
+          height="30.278"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feColorMatrix
+            in="SourceAlpha"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy=".278" />
+          <feGaussianBlur stdDeviation=".278" />
+          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+          <feBlend in2="shape" result="effect1_innerShadow" />
+        </filter>
+      </defs>
     </SVGIcon>
   );
 };
