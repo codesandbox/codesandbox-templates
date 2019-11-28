@@ -36,6 +36,7 @@ import {
   HyperappIconDark,
   HyperappIconLight
 } from "./HyperappIcon";
+import { GitHubIcon } from "./GitHubIcon";
 import { InfernoIcon, InfernoIconDark, InfernoIconLight } from "./InfernoIcon";
 import {
   JavaScriptIcon,
@@ -122,6 +123,7 @@ export const ColorIcons = {
   ExpressIcon,
   FeathersIcon,
   GatsbyIcon,
+  GitHubIcon,
   GlimmerIcon,
   GridsomeIcon,
   HapiIcon,
@@ -290,6 +292,7 @@ export const Icons = {
   ExpressIcon,
   FeathersIcon,
   GatsbyIcon,
+  GitHubIcon,
   GlimmerIcon,
   GridsomeIcon,
   HapiIcon,
@@ -467,6 +470,7 @@ export {
 } from "./GridsomeIcon";
 export { HapiIcon, HapiIconDark, HapiIconLight } from "./HapiIcon";
 export { HTML5Icon, HTML5IconDark, HTML5IconLight } from "./HTML5Icon";
+export { GitHubIcon } from "./GitHubIcon";
 export {
   HyperappIcon,
   HyperappIconDark,

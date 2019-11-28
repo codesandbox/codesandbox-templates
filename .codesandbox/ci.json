@@ -1,0 +1,4 @@
+{
+  "packages": ["./packages/template-icons"],
+  "sandboxes": ["/packages/template-icons/example"]
+}

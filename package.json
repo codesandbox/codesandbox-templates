@@ -2,6 +2,10 @@
   "name": "codesandbox-templates",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "install": "cd packages/template-icons && yarn",
+    "build": "cd packages/template-icons && build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/codesandbox/codesandbox-templates"
