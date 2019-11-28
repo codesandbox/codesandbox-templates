@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "custom-install": "cd packages/template-icons && yarn",
-    "build": "cd packages/template-icons && build"
+    "build": "cd packages/template-icons && yarn build"
   },
   "repository": {
     "type": "git",
