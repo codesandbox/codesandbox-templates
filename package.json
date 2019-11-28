@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "install": "cd packages/template-icons && yarn",
+    "custom-install": "cd packages/template-icons && yarn",
     "build": "cd packages/template-icons && build"
   },
   "repository": {
