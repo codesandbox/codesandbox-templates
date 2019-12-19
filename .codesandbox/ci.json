@@ -1,0 +1,5 @@
+{
+  "packages": ["./packages/template-icons"],
+  "sandboxes": ["/packages/template-icons/example"],
+  "installCommand": "custom-install"
+}
