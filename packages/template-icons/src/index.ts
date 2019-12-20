@@ -88,6 +88,11 @@ import {
 } from "./StyleguidistIcon";
 import { SvelteIcon, SvelteIconDark, SvelteIconLight } from "./SvelteIcon";
 import {
+  TailwindIcon,
+  TailwindIconDark,
+  TailwindIconLight
+} from "./TailwindIcon";
+import {
   TypeScriptIcon,
   TypeScriptIconDark,
   TypeScriptIconLight
@@ -155,6 +160,7 @@ export const ColorIcons = {
   StorybookIcon,
   StyleguidistIcon,
   SvelteIcon,
+  TailwindIcon,
   TypeScriptIcon,
   UnibitIcon,
   VueIcon,
@@ -211,6 +217,7 @@ export const DarkIcons = {
   StorybookIconDark,
   StyleguidistIconDark,
   SvelteIconDark,
+  TailwindIconDark,
   TypeScriptIconDark,
   UnibitIconDark,
   VueIconDark,
@@ -267,6 +274,7 @@ export const LightIcons = {
   StorybookIconLight,
   StyleguidistIconLight,
   SvelteIconLight,
+  TailwindIconLight,
   TypeScriptIconLight,
   UnibitIconLight,
   VueIconLight,
@@ -324,6 +332,7 @@ export const Icons = {
   StorybookIcon,
   StyleguidistIcon,
   SvelteIcon,
+  TailwindIcon,
   TypeScriptIcon,
   UnibitIcon,
   VueIcon,
@@ -377,6 +386,7 @@ export const Icons = {
   StorybookIconDark,
   StyleguidistIconDark,
   SvelteIconDark,
+  TailwindIconDark,
   TypeScriptIconDark,
   UnibitIconDark,
   VueIconDark,
@@ -430,6 +440,7 @@ export const Icons = {
   StorybookIconLight,
   StyleguidistIconLight,
   SvelteIconLight,
+  TailwindIconLight,
   TypeScriptIconLight,
   UnibitIconLight,
   VueIconLight,
@@ -526,6 +537,11 @@ export {
   StyleguidistIconLight
 } from "./StyleguidistIcon";
 export { SvelteIcon, SvelteIconDark, SvelteIconLight } from "./SvelteIcon";
+export {
+  TailwindIcon,
+  TailwindIconDark,
+  TailwindIconLight
+} from "./TailwindIcon";
 export {
   TypeScriptIcon,
   TypeScriptIconDark,
