@@ -61,6 +61,7 @@ import { PolymerIcon, PolymerIconDark, PolymerIconLight } from "./PolymerIcon";
 import { PreactIcon, PreactIconDark, PreactIconLight } from "./PreactIcon";
 import { PrismaIcon, PrismaIconDark, PrismaIconLight } from "./PrismaIcon";
 import { QuasarIcon, QuasarIconDark, QuasarIconLight } from "./QuasarIcon";
+import { RaxIcon, RaxIconDark, RaxIconLight } from "./RaxIcon";
 import { RazzleIcon, RazzleIconDark, RazzleIconLight } from "./RazzleIcon";
 import { ReactIcon, ReactIconDark, ReactIconLight } from "./ReactIcon";
 import { ReasonIcon, ReasonIconDark, ReasonIconLight } from "./ReasonIcon";
@@ -150,6 +151,7 @@ export const ColorIcons = {
   PreactIcon,
   PrismaIcon,
   QuasarIcon,
+  RaxIcon,
   RazzleIcon,
   ReactIcon,
   ReasonIcon,
@@ -207,6 +209,7 @@ export const DarkIcons = {
   PreactIconDark,
   PrismaIconDark,
   QuasarIconDark,
+  RaxIconDark,
   RazzleIconDark,
   ReactIconDark,
   ReasonIconDark,
@@ -264,6 +267,7 @@ export const LightIcons = {
   PreactIconLight,
   PrismaIconLight,
   QuasarIconLight,
+  RaxIconLight,
   RazzleIconLight,
   ReactIconLight,
   ReasonIconLight,
