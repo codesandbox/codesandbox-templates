@@ -1,31 +1,28 @@
 {
-  "name": "adonis-fullstack-app",
-  "version": "4.1.0",
-  "adonis-version": "4.1.0",
-  "description": "The fullstack application boilerplate for Adonisjs",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "node ace test"
-  },
-  "keywords": ["adonisjs", "adonis-app"],
-  "author": "",
-  "license": "UNLICENSED",
+  "name": "adonis-codesanbox-template",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@adonisjs/ace": "^5.0.8",
-    "@adonisjs/auth": "^3.0.7",
-    "@adonisjs/bodyparser": "^2.0.5",
-    "@adonisjs/cors": "^1.0.7",
-    "@adonisjs/fold": "^4.0.9",
-    "@adonisjs/framework": "^5.0.9",
-    "@adonisjs/ignitor": "^2.0.8",
-    "@adonisjs/lucid": "^6.1.3",
-    "@adonisjs/session": "^1.0.27",
-    "@adonisjs/shield": "^1.0.8"
+  "scripts": {
+    "build": "node ace build --production",
+    "start": "node server.js",
+    "dev": "node ace serve --watch"
   },
-  "devDependencies": {},
-  "autoload": {
-    "App": "./app"
+  "devDependencies": {
+    "@adonisjs/assembler": "^5.3.1",
+    "adonis-preset-ts": "^2.1.0",
+    "pino-pretty": "^5.0.2",
+    "typescript": "~4.2",
+    "youch": "^2.2.2",
+    "youch-terminal": "^1.1.1"
+  },
+  "dependencies": {
+    "@adonisjs/core": "^5.1.8",
+    "@adonisjs/repl": "^3.1.3",
+    "@adonisjs/session": "^6.0.6",
+    "@adonisjs/shield": "^7.0.4",
+    "@adonisjs/view": "^6.0.3",
+    "proxy-addr": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.19"
   }
 }
