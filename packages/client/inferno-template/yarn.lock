@@ -5050,23 +5050,23 @@ inferno-scripts@7.0.4:
   optionalDependencies:
     fsevents "2.0.1"
 
-inferno-shared@7.1.12:
-  version "7.1.12"
-  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-7.1.12.tgz#41e1f845ceed85b9dd5f8e51ce211f0a7ece7b35"
-  integrity sha512-1YuaU0yw4p9EP2FH2pNyW53wynWxZkHFoL5HbI0AauuKHNY4dir5ZwgiAp8lyXp9WmGW5b3CVBeGeiJCHLaZlQ==
+inferno-shared@7.4.6:
+  version "7.4.6"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-7.4.6.tgz#49433c46614733104ccda8d978234148d0eea758"
+  integrity sha512-CRC9ST4WUiRnClKsnMy0h60BzwErYdAGHyRxHeF5VxfqDKZOy0SDb3Jxn+EugQljXW1tJwzHUvWMI7i0tjDtww==
 
-inferno-vnode-flags@7.1.12:
-  version "7.1.12"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-7.1.12.tgz#54a84edddc7ca07ec3a7b689b4b64caffe8c2fbf"
-  integrity sha512-caJo+6bZPNrpS02j66CDlm9DGGsQ7GJeewLHfCL13p4UxmNI7Zzz4jK0Xsz0seG7yz8wonWiboQcaku6Yg8YjA==
+inferno-vnode-flags@7.4.6:
+  version "7.4.6"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-7.4.6.tgz#c183843b7a3a9e9c48e9c6cc2b92960d522bf088"
+  integrity sha512-VZlAjY57hOYel1cGI7HYfir+K9X8NAlIrkOfX/WyEVUs8oFwS8W197r1wZSMzKeGATEqQ+zu4zGnZhjrM5g3Ng==
 
-inferno@7.1.12:
-  version "7.1.12"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-7.1.12.tgz#673596f014b28d34478ca176ea4a09efba319560"
-  integrity sha512-uye9syd9evO6iPi/o5WAWf217j9HlJD7AzzLZb3Lj4RSXrxFhKsUnQABngvQ/+M/wLxR8zB9kr6VLSuXXujq3Q==
+inferno@^7.1.12:
+  version "7.4.6"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-7.4.6.tgz#2198743be748c4c8663d9d0e8e590378238ec983"
+  integrity sha512-g5v3YOO6uuduN29XsZNQqlktiSNmKX8YM15pFfL6WYjjPXMA58ticw1rTtT8zCb0V/D8fF5y4yg3sAgVrlJBDw==
   dependencies:
-    inferno-shared "7.1.12"
-    inferno-vnode-flags "7.1.12"
+    inferno-shared "7.4.6"
+    inferno-vnode-flags "7.4.6"
     opencollective-postinstall "^2.0.2"
 
 inflight@^1.0.4:
@@ -5088,9 +5088,9 @@ inherits@2.0.1:
   integrity sha1-sX0I0ya0Qj5Wjv9xn5GwscvfafE=
 
 ini@^1.3.4, ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.7.tgz#a09363e1911972ea16d7a8851005d84cf09a9a84"
+  integrity sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
 
 inquirer@6.2.1:
   version "6.2.1"
