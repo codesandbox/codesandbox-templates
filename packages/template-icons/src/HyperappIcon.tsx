@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const HyperappIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const HyperappIcon: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       d="M31 8V24C31 26.21 29.21 28 27 28H5C2.79 28 1 26.21 1 24V8C1 5.79 2.79 4 5 4H27C29.21 4 31 5.79 31 8Z"
@@ -14,7 +17,9 @@ export const HyperappIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const HyperappIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const HyperappIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       d="M31 8V24C31 26.21 29.21 28 27 28H5C2.79 28 1 26.21 1 24V8C1 5.79 2.79 4 5 4H27C29.21 4 31 5.79 31 8Z"
@@ -27,7 +32,9 @@ export const HyperappIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const HyperappIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const HyperappIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       d="M31 8V24C31 26.21 29.21 28 27 28H5C2.79 28 1 26.21 1 24V8C1 5.79 2.79 4 5 4H27C29.21 4 31 5.79 31 8Z"

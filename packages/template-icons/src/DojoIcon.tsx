@@ -1,8 +1,11 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
+
+import { SVGIcon } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const DojoIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const DojoIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => {
   const id = useUniqueId();
 
   return (
@@ -245,8 +248,11 @@ export const DojoIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
 };
 
 const styles = { mixBlendMode: "screen" } as React.CSSProperties;
-export const DojoIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const DojoIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => {
   const id = useUniqueId();
+
   return (
     <SVGIcon {...props}>
       <g clipPath={`url(#Dojo_Clip0_${id})`}>
@@ -387,7 +393,9 @@ export const DojoIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const DojoIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const DojoIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => {
   const id = useUniqueId();
   return (
     <SVGIcon {...props}>

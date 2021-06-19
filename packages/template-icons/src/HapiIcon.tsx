@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const HapiIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const HapiIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M6.26768 1.3485C6.5479 1.12685 6.91252 0.951719 7.27772 1.01201C7.64004 1.09987 8.02247 1.24112 8.24124 1.56211C8.62251 2.10014 8.5605 2.86384 8.16717 3.37834L8.13731 3.34848C8.04888 3.26005 7.96275 3.16588 7.85595 3.09927C7.73823 3.02175 7.55047 3.08779 7.51831 3.22789C7.47639 3.43346 7.57516 3.62984 7.67392 3.80383C7.32653 3.87503 6.9487 3.92269 6.61336 3.77741C6.11093 3.5707 5.72276 3.07802 5.6797 2.53195C5.70726 2.08119 5.95359 1.66317 6.26768 1.3485Z"
@@ -46,7 +49,9 @@ export const HapiIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const HapiIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const HapiIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -57,7 +62,9 @@ export const HapiIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const HapiIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const HapiIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

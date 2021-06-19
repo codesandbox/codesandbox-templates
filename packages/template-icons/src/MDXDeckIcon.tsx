@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const MDXDeckIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const MDXDeckIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M30.7826 9.56522H1.21739C0.641093 9.56522 0.173912 10.0324 0.173912 10.6087V21.3913C0.173912 21.9676 0.641093 22.4348 1.21739 22.4348H30.7826C31.3589 22.4348 31.8261 21.9676 31.8261 21.3913V10.6087C31.8261 10.0324 31.3589 9.56522 30.7826 9.56522Z"
@@ -33,7 +36,9 @@ export const MDXDeckIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const MDXDeckIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const MDXDeckIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -44,7 +49,9 @@ export const MDXDeckIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const MDXDeckIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const MDXDeckIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

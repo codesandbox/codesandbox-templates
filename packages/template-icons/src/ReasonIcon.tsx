@@ -1,8 +1,11 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
+
+import { SVGIcon } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const ReasonIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const ReasonIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => {
   const id = useUniqueId();
 
   return (
@@ -94,8 +97,11 @@ export const ReasonIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const ReasonIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const ReasonIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => {
   const id = useUniqueId();
+
   return (
     <SVGIcon {...props}>
       <g filter={`url(#filter_${id})`}>
@@ -134,8 +140,11 @@ export const ReasonIconDark: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const ReasonIconLight: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const ReasonIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => {
   const id = useUniqueId();
+
   return (
     <SVGIcon {...props}>
       <g filter={`url(#filter_${id})`}>

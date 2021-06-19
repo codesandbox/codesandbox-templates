@@ -1,25 +1,26 @@
-import React from "react";
+import React, { FunctionComponent, HTMLAttributes } from "react";
 
-export interface ISVGIconProps extends React.HTMLAttributes<SVGElement> {
+export interface Props
+  extends Omit<HTMLAttributes<SVGElement>, "fill" | "viewBox" | "xmlns"> {
+  height?: number;
   scale?: number;
   width?: number;
-  height?: number;
 }
 
-export const SVGIcon: React.FC<ISVGIconProps> = ({
-  scale = 1,
-  width = 32,
-  height = 32,
+export const SVGIcon: FunctionComponent<Props> = ({
   children,
+  height = 32,
+  width = 32,
+  scale = 1,
   ...props
 }) => (
   <svg
+    {...props}
+    fill="none"
     width={scale * width}
     height={scale * height}
     viewBox="0 0 32 32"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
   >
     {children}
   </svg>

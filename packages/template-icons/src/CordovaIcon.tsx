@@ -1,8 +1,11 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
+
+import { SVGIcon } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const CordovaIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const CordovaIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => {
   const id = useUniqueId();
 
   return (
@@ -387,7 +390,9 @@ export const CordovaIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const CordovaIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const CordovaIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -397,7 +402,9 @@ export const CordovaIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
     />
   </SVGIcon>
 );
-export const CordovaIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const CordovaIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const NuxtIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const NuxtIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -22,7 +25,9 @@ export const NuxtIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const NuxtIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const NuxtIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -45,7 +50,9 @@ export const NuxtIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const NuxtIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const NuxtIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

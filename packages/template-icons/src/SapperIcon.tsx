@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const SapperIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const SapperIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M27.9264 4.23542C24.9531 -0.0244216 19.0922 -1.28236 14.8324 1.43364L7.39912 6.1795C5.36926 7.46603 3.96838 9.52448 3.53954 11.8974C3.19646 13.8701 3.48236 15.8999 4.42581 17.6725C3.79684 18.6445 3.33941 19.7309 3.13928 20.8745C2.71044 23.276 3.28223 25.7633 4.71171 27.7646C7.68501 32.0244 13.5459 33.2824 17.8057 30.5664L25.2676 25.8205C27.2974 24.534 28.6983 22.4755 29.1271 20.1026C29.4702 18.1299 29.1557 16.1001 28.2409 14.3275C28.8698 13.3555 29.3273 12.2691 29.5274 11.1255C29.9277 8.72397 29.3559 6.26527 27.9264 4.23542Z"
@@ -14,7 +17,9 @@ export const SapperIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const SapperIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const SapperIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"
@@ -25,7 +30,9 @@ export const SapperIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const SapperIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const SapperIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fillRule="evenodd"

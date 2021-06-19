@@ -1,8 +1,11 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
+
+import { SVGIcon } from "./SVGIcon";
 import { useUniqueId } from "./useUniqueId";
 
-export const AureliaIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
+export const AureliaIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => {
   const id = useUniqueId();
 
   return (
@@ -174,7 +177,9 @@ export const AureliaIcon: React.FC<ISVGIconProps> = ({ ...props }) => {
   );
 };
 
-export const AureliaIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const AureliaIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fill-rule="evenodd"
@@ -185,7 +190,9 @@ export const AureliaIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const AureliaIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const AureliaIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       fill-rule="evenodd"

@@ -1,7 +1,10 @@
-import React from "react";
-import { SVGIcon, ISVGIconProps } from "./SVGIcon";
+import React, { ComponentProps, FunctionComponent } from "react";
 
-export const DoczIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
+import { SVGIcon } from "./SVGIcon";
+
+export const DoczIcon: FunctionComponent<ComponentProps<typeof SVGIcon>> = ({
+  ...props
+}) => (
   <SVGIcon {...props}>
     <path
       d="M10.8331 5.90909H30.1488C30.1326 4.36669 28.9595 3.26447 27.5141 3.26447H8.19835C9.6438 3.26447 10.8169 4.36669 10.8331 5.90909Z"
@@ -58,7 +61,9 @@ export const DoczIcon: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const DoczIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const DoczIconDark: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       d="M11.156 6.53977H29.2645C29.2493 5.09377 28.1495 4.06043 26.7944 4.06043H8.68594C10.0411 4.06043 11.1408 5.09377 11.156 6.53977Z"
@@ -87,7 +92,9 @@ export const DoczIconDark: React.FC<ISVGIconProps> = ({ ...props }) => (
   </SVGIcon>
 );
 
-export const DoczIconLight: React.FC<ISVGIconProps> = ({ ...props }) => (
+export const DoczIconLight: FunctionComponent<
+  ComponentProps<typeof SVGIcon>
+> = ({ ...props }) => (
   <SVGIcon {...props}>
     <path
       d="M11.156 6.53977H29.2645C29.2493 5.09377 28.1495 4.06043 26.7944 4.06043H8.68594C10.0411 4.06043 11.1408 5.09377 11.156 6.53977Z"
